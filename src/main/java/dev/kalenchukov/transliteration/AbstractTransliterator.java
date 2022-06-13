@@ -17,7 +17,7 @@ import java.util.Objects;
 /**
  * Класс абстрактной транслитерации.
  */
-public abstract class AbstractTransliteration implements Transliterating
+public abstract class AbstractTransliterator implements Transliterating
 {
 	/**
 	 * Стандарт.
@@ -29,7 +29,7 @@ public abstract class AbstractTransliteration implements Transliterating
 	 *
 	 * @param standard Стандарт.
 	 */
-	public AbstractTransliteration(@NotNull final Standard standard)
+	public AbstractTransliterator(@NotNull final Standard standard)
 	{
 		Objects.requireNonNull(standard);
 
@@ -40,6 +40,7 @@ public abstract class AbstractTransliteration implements Transliterating
 	 * @see Transliterating#translate(String)
 	 */
 	@NotNull
+	@Override
 	public String translate(@NotNull final String text)
 	{
 		Objects.requireNonNull(text);

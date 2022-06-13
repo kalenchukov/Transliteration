@@ -14,27 +14,14 @@ import java.util.Objects;
 /**
  * Класс транслитерации.
  */
-public class Transliterator
+public class Transliterator extends AbstractTransliterator
 {
 	/**
-	 * Конструктор для {@code Transliterator} запрещающий создавать объект класса.
+	 * @see AbstractTransliterator#AbstractTransliterator(Standard)
 	 */
-	private Transliterator() {}
-
-	/**
-	 * Выполняет транслитерацию текста по стандарту установленному по умолчанию - ICAO DOC 9303.
-	 *
-	 * @param text Текст.
-	 * @return Транслитерированный текст.
-	 */
-	@NotNull
-	public static String transliteration(@NotNull final String text)
+	public Transliterator(@NotNull final Standard standard)
 	{
-		Objects.requireNonNull(text);
-
-		Transliterating transliteration = new Transliteration(Standard.ICAO_DOC_9303);
-
-		return transliteration.translate(text);
+		super(Objects.requireNonNull(standard));
 	}
 
 	/**
@@ -45,12 +32,12 @@ public class Transliterator
 	 * @return Транслитерированный текст.
 	 */
 	@NotNull
-	public static String transliteration(@NotNull final String text, @NotNull final Standard standard)
+	public static String translate(@NotNull final String text, @NotNull final Standard standard)
 	{
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(standard);
 
-		Transliterating transliteration = new Transliteration(standard);
+		Transliterating transliteration = new Transliterator(standard);
 
 		return transliteration.translate(text);
 	}

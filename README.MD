@@ -10,23 +10,13 @@
 
 ### Использование
 ```java
-Transliterating transliteration = new Transliteration(Standard.ICAO_DOC_9303);
-transliteration.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+Transliterating transliterator = new Transliterator(Standard.ICAO_DOC_9303);
+transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
 // Результат выполнения:
 // Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.
 ```
 
 ### Статические методы
-Используя стандарт по умолчанию - ICAO DOC 9303:
-```java
-Transliterator.translate(
-	"Шеф взъярён тчк щипцы с эхом гудбай Жюль."
-);
-// Результат выполнения:
-// Shef vzieiaren tchk shchiptsy s ekhom gudbai Zhiul.
-```
-
-Используя указанный стандарт:
 ```java
 Transliterator.translate(
     "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",

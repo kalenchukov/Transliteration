@@ -10,6 +10,7 @@ import dev.kalenchukov.stringi.Stringi;
 import dev.kalenchukov.transliteration.resources.Standard;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.Range;
 
 import java.util.Map;
 import java.util.Objects;
@@ -62,9 +63,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return Символы для замены или текущий символ если замена не требуется.
 	 */
 	@NotNull
-	private String replacementSymbol(@NotNull final String text, final int position)
+	private String replacementSymbol(@NotNull final String text,
+									 @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
 	{
 		Objects.requireNonNull(text);
+		Objects.requireNonNull(position);
 
 		String newSymbol = null;
 
@@ -95,9 +98,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return Значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRulesPrevious(@NotNull final String text, final int position)
+	private String checkRulesPrevious(@NotNull final String text,
+									  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
 	{
 		Objects.requireNonNull(text);
+		Objects.requireNonNull(position);
 
 		for (Map.Entry<String, String> entry : standard.getSchema().getRulesPrevious().entrySet())
 		{
@@ -123,9 +128,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return Значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRules(@NotNull final String text, final int position)
+	private String checkRules(@NotNull final String text,
+							  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
 	{
 		Objects.requireNonNull(text);
+		Objects.requireNonNull(position);
 
 		String currentSymbol = String.valueOf(text.charAt(position)).toLowerCase();
 
@@ -140,9 +147,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return Значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRulesNext(@NotNull final String text, final int position)
+	private String checkRulesNext(@NotNull final String text,
+								  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
 	{
 		Objects.requireNonNull(text);
+		Objects.requireNonNull(position);
 
 		for (Map.Entry<String, String> entry : standard.getSchema().getRulesNext().entrySet())
 		{

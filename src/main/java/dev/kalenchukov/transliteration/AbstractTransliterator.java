@@ -102,7 +102,7 @@ public abstract class AbstractTransliterator implements Transliterating
 		}
 
 		if (newSymbol != null) {
-			return Stringi.isUpperCase(text.charAt(position)) ? Stringi.firstToUpperCase(newSymbol) : newSymbol;
+			return Character.isUpperCase(text.charAt(position)) ? Stringi.firstToUpperCase(newSymbol) : newSymbol;
 		}
 
 		return String.valueOf(text.charAt(position));

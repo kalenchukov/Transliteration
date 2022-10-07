@@ -1,3 +1,6 @@
+/**
+ * Определяет API для транслитерации кириллического письма латинским алфавитом.
+ */
 module dev.kalenchukov.transliteration
 {
 	requires org.jetbrains.annotations;

@@ -28,14 +28,6 @@ Transliterator.translate(
 // Результат выполнения: Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.
 ```
 
-## Установка
-
-Для установки этого проекта, введите в терминале:
-
-```bash
-git clone https://github.com/kalenchukov/Transliteration.git
-```
-
 ## Версии
 
 Доступные [версии](https://github.com/kalenchukov/Transliteration/releases).

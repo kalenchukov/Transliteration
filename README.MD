@@ -40,10 +40,6 @@ git clone https://github.com/kalenchukov/Transliteration.git
 
 Доступные [версии](https://github.com/kalenchukov/Transliteration/releases).
 
-## Авторы
-
-[Алексей Каленчуков](https://github.com/kalenchukov)
-
 ## Лицензия
 
 [MIT](https://opensource.org/licenses/MIT)

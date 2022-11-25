@@ -27,11 +27,3 @@ Transliterator.translate(
 );
 // Результат выполнения: Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.
 ```
-
-## Версии
-
-Доступные [версии](https://github.com/kalenchukov/Transliteration/releases).
-
-## Лицензия
-
-[MIT](https://opensource.org/licenses/MIT)

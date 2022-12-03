@@ -35,7 +35,9 @@ import java.util.Objects;
 public class Transliterator extends AbstractTransliterator
 {
 	/**
-	 * @see AbstractTransliterator#AbstractTransliterator(Standard)
+	 * Конструктор для {@code AbstractTransliteration}.
+	 *
+	 * @param standard стандарт.
 	 */
 	public Transliterator(@NotNull final Standard standard)
 	{
@@ -45,9 +47,9 @@ public class Transliterator extends AbstractTransliterator
 	/**
 	 * Выполняет транслитерацию текста.
 	 *
-	 * @param text Текст.
-	 * @param standard Стандарт.
-	 * @return Транслитерированный текст.
+	 * @param text текст.
+	 * @param standard стандарт.
+	 * @return транслитерированный текст.
 	 */
 	@NotNull
 	public static String translate(@NotNull final String text, @NotNull final Standard standard)

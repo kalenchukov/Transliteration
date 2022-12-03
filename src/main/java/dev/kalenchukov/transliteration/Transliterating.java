@@ -34,8 +34,8 @@ public interface Transliterating
 	/**
 	 * Выполняет транслитерацию текста.
 	 *
-	 * @param text Текст.
-	 * @return Транслитерированный текст.
+	 * @param text текст.
+	 * @return транслитерированный текст.
 	 */
 	@NotNull
 	String translate(@NotNull String text);

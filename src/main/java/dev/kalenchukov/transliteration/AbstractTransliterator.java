@@ -46,7 +46,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	/**
 	 * Конструктор для {@code AbstractTransliteration}.
 	 *
-	 * @param standard Стандарт.
+	 * @param standard стандарт.
 	 */
 	public AbstractTransliterator(@NotNull final Standard standard)
 	{
@@ -76,9 +76,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	/**
 	 * Заменяет символ по правилу замены.
 	 *
-	 * @param text Текст.
-	 * @param position Позиция символа в тексте.
-	 * @return Символы для замены или текущий символ если замена не требуется.
+	 * @param text текст.
+	 * @param position позиция символа в тексте.
+	 * @return символы для замены или текущий символ если замена не требуется.
 	 */
 	@NotNull
 	private String replacementSymbol(@NotNull final String text,
@@ -111,9 +111,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	/**
 	 * Проверка символа на правило замены в зависимости от предыдущих символов.
 	 *
-	 * @param text Текст.
-	 * @param position Позиция символа в тексте.
-	 * @return Значение для замены или {@code null}, если замена символа не требуется.
+	 * @param text текст.
+	 * @param position позиция символа в тексте.
+	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
 	private String checkRulesPrevious(@NotNull final String text,
@@ -141,9 +141,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	/**
 	 * Проверка символа на соответствие правилу замены.
 	 *
-	 * @param text Текст.
-	 * @param position Позиция символа в тексте.
-	 * @return Значение для замены или {@code null}, если замена символа не требуется.
+	 * @param text текст.
+	 * @param position позиция символа в тексте.
+	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
 	private String checkRules(@NotNull final String text,
@@ -160,9 +160,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	/**
 	 * Проверка символа на правило замены в зависимости от следующих символов.
 	 *
-	 * @param text Текст.
-	 * @param position Позиция символа в тексте.
-	 * @return Значение для замены или {@code null}, если замена символа не требуется.
+	 * @param text текст.
+	 * @param position позиция символа в тексте.
+	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
 	private String checkRulesNext(@NotNull final String text,

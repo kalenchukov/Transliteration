@@ -68,7 +68,7 @@ public enum Standard
 	/**
 	 * Конструктор для {@code Standard}.
 	 *
-	 * @param schema Схема.
+	 * @param schema схема.
 	 */
 	Standard(@NotNull final Schematic schema)
 	{
@@ -80,7 +80,7 @@ public enum Standard
 	/**
 	 * Возвращает объект схемы.
 	 *
-	 * @return Объект схемы.
+	 * @return объект схемы.
 	 */
 	@NotNull
 	public Schematic getSchema()

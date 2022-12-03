@@ -40,7 +40,7 @@ public interface Schematic
 	 *     <li><b>value</b> - чем заменяется</li>
 	 * </ul>
 	 *
-	 * @return Коллекцию правил замены символов.
+	 * @return коллекцию правил замены символов.
 	 */
 	@NotNull
 	Map<@NotNull String, @NotNull String> getRulesPrevious();
@@ -52,7 +52,7 @@ public interface Schematic
 	 *     <li><b>value</b> - чем заменяется</li>
 	 * </ul>
 	 *
-	 * @return Коллекцию правил замены символов.
+	 * @return коллекцию правил замены символов.
 	 */
 	@NotNull
 	Map<@NotNull String, @NotNull String> getRules();
@@ -64,7 +64,7 @@ public interface Schematic
 	 *     <li><b>value</b> - чем заменяется</li>
 	 * </ul>
 	 *
-	 * @return Коллекцию правил замены символов.
+	 * @return коллекцию правил замены символов.
 	 */
 	@NotNull
 	Map<@NotNull String, @NotNull String> getRulesNext();

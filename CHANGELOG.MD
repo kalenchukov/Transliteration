@@ -1,7 +1,5 @@
 # Журнал изменений
-
 ## vX.X.X - XX.XX.XXXX
-
 ### Добавлено
 * Добавлен AUTHOR.MD.
 * Добавлен INSTALL.MD.
@@ -14,7 +12,6 @@
 *
 
 ## v1.1.0 - 16.10.2022
-
 ### Добавлено
 * Добавлен плагин maven-assembly в pom.xml.
 * Добавлен плагин maven-compiler в pom.xml.

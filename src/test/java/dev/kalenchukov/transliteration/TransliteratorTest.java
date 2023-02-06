@@ -29,10 +29,13 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Класс проверки методов класса {@link Transliterator}.
+ */
 public class TransliteratorTest
 {
 	/**
-	 * Проверка транслитерации по стандарту ICAO DOC 9303.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#ICAO_DOC_9303}.
 	 */
 	@Test
 	public void testTranslateIcaoDoc9303()
@@ -44,7 +47,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система А.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_7_79_2000A}.
 	 */
 	@Test
 	public void testTranslateGost7792000A()
@@ -56,7 +59,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система B.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_7_79_2000B}.
 	 */
 	@Test
 	public void testTranslateGost7792000B()
@@ -68,7 +71,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система B.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_7_79_2000B}.
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
@@ -81,7 +84,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 16876-71 система А.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_16876_71A}.
 	 */
 	@Test
 	public void testTranslateGost1687671A()
@@ -93,7 +96,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 16876-71 система B.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_16876_71B}.
 	 */
 	@Test
 	public void testTranslateGost1687671B()
@@ -105,7 +108,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ICAO DOC 9303.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#ICAO_DOC_9303}.
 	 */
 	@Test
 	public void testTranslateStaticIcaoDoc9303()
@@ -119,7 +122,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система А.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000A}.
 	 */
 	@Test
 	public void testTranslateStaticGost7792000A()
@@ -133,7 +136,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система B.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000B}.
 	 */
 	@Test
 	public void testTranslateStaticGost7792000B()
@@ -147,11 +150,11 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 7.79-2000 система B.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000B}.
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateStaticGost7792000BRulesNext()
+	public void testTranslateStaticGost7792000BContractNext()
 	{
 		String result = Transliterator.translate(
 			"Эх, чужд кайф, сплющь объём вши, грызя цент.",
@@ -162,7 +165,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 16876-71 система А.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_16876_71A}.
 	 */
 	@Test
 	public void testTranslateStaticGost1687671A()
@@ -176,7 +179,7 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка транслитерации по стандарту ГОСТ 16876-71 система B.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_16876_71B}.
 	 */
 	@Test
 	public void testTranslateStaticGost1687671B()

@@ -36,6 +36,11 @@ import java.util.Objects;
 public final class Gost1687671BSchema implements Schematic
 {
 	/**
+	 * Конструктор для {@code Gost1687671BSchema}.
+	 */
+	public Gost1687671BSchema() {}
+
+	/**
 	 * @see Schematic#getRulesPrevious()
 	 */
 	@NotNull

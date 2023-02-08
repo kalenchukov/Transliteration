@@ -28,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ICAO DOC 9303.
@@ -96,5 +97,55 @@ public final class IcaoDoc9303Schema implements Schematic
 	public Map<@NotNull String, @NotNull String> getRulesNext()
 	{
 		return Collections.emptyMap();
+	}
+
+	/**
+	 * @see Object#hashCode()
+	 */
+	@Override
+	public int hashCode()
+	{
+		int result = 0;
+
+		result = 31 * result + this.getRulesPrevious().hashCode();
+		result = 31 * result + this.getRules().hashCode();
+		result = 31 + result + this.getRulesNext().hashCode();
+
+		return result;
+	}
+
+	/**
+	 * @see Object#equals(Object)
+	 */
+	@Override
+	public boolean equals(final Object obj)
+	{
+		if (obj == null) {
+			return false;
+		}
+
+		if (this == obj) {
+			return true;
+		}
+
+		if (this.getClass() != obj.getClass()) {
+			return false;
+		}
+
+		IcaoDoc9303Schema icaoDoc9303Schema = (IcaoDoc9303Schema) obj;
+
+		if (!Objects.equals(this.getRulesPrevious(), icaoDoc9303Schema.getRulesPrevious())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRules(), icaoDoc9303Schema.getRules())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRulesNext(), icaoDoc9303Schema.getRulesNext())) {
+			return false;
+		}
+
+		return true;
 	}
 }

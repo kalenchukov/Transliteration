@@ -28,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ГОСТ 7.79-2000 система B.
@@ -101,5 +102,55 @@ public final class Gost7792000BSchema implements Schematic
 			Map.entry("цй", "c"),
 			Map.entry("цы", "c")
 		);
+	}
+
+	/**
+	 * @see Object#hashCode()
+	 */
+	@Override
+	public int hashCode()
+	{
+		int result = 0;
+
+		result = 31 * result + this.getRulesPrevious().hashCode();
+		result = 31 * result + this.getRules().hashCode();
+		result = 31 + result + this.getRulesNext().hashCode();
+
+		return result;
+	}
+
+	/**
+	 * @see Object#equals(Object)
+	 */
+	@Override
+	public boolean equals(final Object obj)
+	{
+		if (obj == null) {
+			return false;
+		}
+
+		if (this == obj) {
+			return true;
+		}
+
+		if (this.getClass() != obj.getClass()) {
+			return false;
+		}
+
+		Gost7792000BSchema gost7792000BSchema = (Gost7792000BSchema) obj;
+
+		if (!Objects.equals(this.getRulesPrevious(), gost7792000BSchema.getRulesPrevious())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRules(), gost7792000BSchema.getRules())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRulesNext(), gost7792000BSchema.getRulesNext())) {
+			return false;
+		}
+
+		return true;
 	}
 }

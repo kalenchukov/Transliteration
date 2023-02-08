@@ -111,7 +111,7 @@ public class TransliteratorTest
 	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#ICAO_DOC_9303}.
 	 */
 	@Test
-	public void testTranslateStaticIcaoDoc9303()
+	public void testTranslateIcaoDoc9303Static()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -125,7 +125,7 @@ public class TransliteratorTest
 	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000A}.
 	 */
 	@Test
-	public void testTranslateStaticGost7792000A()
+	public void testTranslateGost7792000AStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -139,7 +139,7 @@ public class TransliteratorTest
 	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000B}.
 	 */
 	@Test
-	public void testTranslateStaticGost7792000B()
+	public void testTranslateGost7792000BStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -154,7 +154,7 @@ public class TransliteratorTest
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateStaticGost7792000BContractNext()
+	public void testTranslateGost7792000BContractNextStatic()
 	{
 		String result = Transliterator.translate(
 			"Эх, чужд кайф, сплющь объём вши, грызя цент.",
@@ -168,7 +168,7 @@ public class TransliteratorTest
 	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_16876_71A}.
 	 */
 	@Test
-	public void testTranslateStaticGost1687671A()
+	public void testTranslateGost1687671AStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -182,7 +182,7 @@ public class TransliteratorTest
 	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_16876_71B}.
 	 */
 	@Test
-	public void testTranslateStaticGost1687671B()
+	public void testTranslateGost1687671BStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",

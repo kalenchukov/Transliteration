@@ -28,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
@@ -96,5 +97,55 @@ public final class Gost1687671ASchema implements Schematic
 	public Map<@NotNull String, @NotNull String> getRulesNext()
 	{
 		return Collections.emptyMap();
+	}
+
+	/**
+	 * @see Object#hashCode()
+	 */
+	@Override
+	public int hashCode()
+	{
+		int result = 0;
+
+		result = 31 * result + this.getRulesPrevious().hashCode();
+		result = 31 * result + this.getRules().hashCode();
+		result = 31 + result + this.getRulesNext().hashCode();
+
+		return result;
+	}
+
+	/**
+	 * @see Object#equals(Object)
+	 */
+	@Override
+	public boolean equals(final Object obj)
+	{
+		if (obj == null) {
+			return false;
+		}
+
+		if (this == obj) {
+			return true;
+		}
+
+		if (this.getClass() != obj.getClass()) {
+			return false;
+		}
+
+		Gost1687671ASchema gost1687671ASchema = (Gost1687671ASchema) obj;
+
+		if (!Objects.equals(this.getRulesPrevious(), gost1687671ASchema.getRulesPrevious())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRules(), gost1687671ASchema.getRules())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRulesNext(), gost1687671ASchema.getRulesNext())) {
+			return false;
+		}
+
+		return true;
 	}
 }

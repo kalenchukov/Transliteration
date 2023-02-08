@@ -8,4 +8,5 @@ module dev.kalenchukov.transliteration
 
 	exports dev.kalenchukov.transliteration;
 	exports dev.kalenchukov.transliteration.resources;
+	exports dev.kalenchukov.transliteration.schemas;
 }

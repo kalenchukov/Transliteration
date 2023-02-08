@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
  */
-public final class Gost1687671ASchema implements dev.kalenchukov.transliteration.schemas.Schematic
+public final class Gost1687671ASchema implements Schematic
 {
 	/**
 	 * @see Schematic#getRulesPrevious()

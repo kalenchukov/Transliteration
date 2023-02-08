@@ -36,6 +36,11 @@ import java.util.Objects;
 public final class IcaoDoc9303Schema implements Schematic
 {
 	/**
+	 * Конструктор для {@code IcaoDoc9303Schema}.
+	 */
+	public IcaoDoc9303Schema() {}
+
+	/**
 	 * @see Schematic#getRulesPrevious()
 	 */
 	@NotNull

@@ -128,7 +128,7 @@ public final class Gost7792000BSchema implements Schematic
 	 * @see Object#equals(Object)
 	 */
 	@Override
-	public boolean equals(final Object obj)
+	public boolean equals(@Nullable final Object obj)
 	{
 		if (obj == null) {
 			return false;

@@ -3,6 +3,7 @@
 ### Добавлено
 * Добавлен метод Schematic.equals(Object).
 * Добавлен метод Schematic.hashCode().
+* Изменена версия требуемого модуля Stringi до 1.4.0.
 * Добавлен AUTHOR.MD.
 * Добавлен INSTALL.MD.
 * Добавлен CHANGELOG.MD.

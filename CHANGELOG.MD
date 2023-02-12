@@ -11,9 +11,6 @@
 ### Изменено
 * Обновлён README.MD.
 
-### Исправлено
-*
-
 ## v1.1.0 - 16.10.2022
 ### Добавлено
 * Добавлен плагин maven-assembly в pom.xml.
@@ -23,7 +20,7 @@
 * Добавлен плагин maven-source в pom.xml.
 
 ### Изменено
-* Изменена версия требуемого модуля Stringi.
+* Изменена версия требуемого модуля Stringi до 1.3.0.
 
 ### Исправлено
 * Исправлен баг в методе AbstractTransliterator.replacementSymbol(String, Integer).

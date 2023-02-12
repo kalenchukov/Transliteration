@@ -3,7 +3,7 @@
 ### Добавлено
 * Добавлен метод Schematic.equals(Object).
 * Добавлен метод Schematic.hashCode().
-* Изменена версия требуемого модуля Stringi до 1.4.0.
+* Изменена версия требуемого модуля stringi до 1.4.0.
 * Добавлен AUTHOR.MD.
 * Добавлен INSTALL.MD.
 * Добавлен CHANGELOG.MD.
@@ -20,7 +20,7 @@
 * Добавлен плагин maven-source в pom.xml.
 
 ### Изменено
-* Изменена версия требуемого модуля Stringi до 1.3.0.
+* Изменена версия требуемого модуля stringi до 1.3.0.
 
 ### Исправлено
 * Исправлен баг в методе AbstractTransliterator.replacementSymbol(String, Integer).

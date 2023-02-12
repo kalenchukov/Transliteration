@@ -1,5 +1,5 @@
 # Журнал изменений
-## vX.X.X - XX.XX.XXXX
+## v1.2.0 - 12.02.2023
 ### Добавлено
 * Добавлен метод Schematic.equals(Object).
 * Добавлен метод Schematic.hashCode().

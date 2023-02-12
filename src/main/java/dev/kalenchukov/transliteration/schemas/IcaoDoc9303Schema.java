@@ -106,7 +106,7 @@ public final class IcaoDoc9303Schema implements Schematic
 	}
 
 	/**
-	 * @see Object#hashCode()
+	 * @see Schematic#hashCode()
 	 */
 	@Override
 	public int hashCode()

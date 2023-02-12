@@ -1,6 +1,8 @@
 # Журнал изменений
 ## vX.X.X - XX.XX.XXXX
 ### Добавлено
+* Добавлен метод Schematic.equals(Object).
+* Добавлен метод Schematic.hashCode().
 * Добавлен AUTHOR.MD.
 * Добавлен INSTALL.MD.
 * Добавлен CHANGELOG.MD.

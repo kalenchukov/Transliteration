@@ -106,7 +106,7 @@ public final class Gost7792000ASchema implements Schematic
 	}
 
 	/**
-	 * @see Object#hashCode()
+	 * @see Schematic#hashCode()
 	 */
 	@Override
 	public int hashCode()

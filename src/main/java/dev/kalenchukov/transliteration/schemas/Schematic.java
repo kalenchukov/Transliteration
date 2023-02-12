@@ -74,4 +74,9 @@ public interface Schematic
 	 * @see Object#equals(Object)
 	 */
 	boolean equals(@Nullable Object obj);
+
+	/**
+	 * @see Object#hashCode()
+	 */
+	int hashCode();
 }

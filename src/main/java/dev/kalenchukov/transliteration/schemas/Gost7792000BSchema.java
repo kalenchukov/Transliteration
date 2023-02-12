@@ -25,6 +25,7 @@
 package dev.kalenchukov.transliteration.schemas;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.Map;
@@ -125,7 +126,7 @@ public final class Gost7792000BSchema implements Schematic
 	}
 
 	/**
-	 * @see Object#equals(Object)
+	 * @see Schematic#equals(Object)
 	 */
 	@Override
 	public boolean equals(@Nullable final Object obj)

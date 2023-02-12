@@ -25,6 +25,7 @@
 package dev.kalenchukov.transliteration.schemas;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
@@ -68,4 +69,9 @@ public interface Schematic
 	 */
 	@NotNull
 	Map<@NotNull String, @NotNull String> getRulesNext();
+
+	/**
+	 * @see Object#equals(Object)
+	 */
+	boolean equals(@Nullable Object obj);
 }

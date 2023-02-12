@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * Класс проверки констант и методов перечисления {@link Standard}.
  */
-class StandardTest
+public class StandardTest
 {
 	/**
 	 * Проверка метода {@link Standard#getSchema()}.

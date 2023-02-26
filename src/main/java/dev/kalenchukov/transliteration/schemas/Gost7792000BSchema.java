@@ -42,7 +42,9 @@ public final class Gost7792000BSchema implements Schematic
 	public Gost7792000BSchema() {}
 
 	/**
-	 * @see Schematic#getRulesPrevious()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -52,7 +54,9 @@ public final class Gost7792000BSchema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#getRules()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -96,7 +100,9 @@ public final class Gost7792000BSchema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#getRulesNext()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -111,7 +117,9 @@ public final class Gost7792000BSchema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#hashCode()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@Override
 	public int hashCode()
@@ -126,7 +134,10 @@ public final class Gost7792000BSchema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#equals(Object)
+	 * {@inheritDoc}
+	 *
+	 * @param obj {@inheritDoc}
+	 * @return {@inheritDoc}
 	 */
 	@Override
 	public boolean equals(@Nullable final Object obj)

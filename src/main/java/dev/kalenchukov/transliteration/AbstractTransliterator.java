@@ -56,7 +56,10 @@ public abstract class AbstractTransliterator implements Transliterating
 	}
 
 	/**
-	 * @see Transliterating#translate(String)
+	 * {@inheritDoc}
+	 *
+	 * @param text {@inheritDoc}
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override

@@ -42,7 +42,9 @@ public final class IcaoDoc9303Schema implements Schematic
 	public IcaoDoc9303Schema() {}
 
 	/**
-	 * @see Schematic#getRulesPrevious()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -52,7 +54,9 @@ public final class IcaoDoc9303Schema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#getRules()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -96,7 +100,9 @@ public final class IcaoDoc9303Schema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#getRulesNext()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@NotNull
 	@Override
@@ -106,7 +112,9 @@ public final class IcaoDoc9303Schema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#hashCode()
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
 	 */
 	@Override
 	public int hashCode()
@@ -121,7 +129,10 @@ public final class IcaoDoc9303Schema implements Schematic
 	}
 
 	/**
-	 * @see Schematic#equals(Object)
+	 * {@inheritDoc}
+	 *
+	 * @param obj {@inheritDoc}
+	 * @return {@inheritDoc}
 	 */
 	@Override
 	public boolean equals(@Nullable final Object obj)

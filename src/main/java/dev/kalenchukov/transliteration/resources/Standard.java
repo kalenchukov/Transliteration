@@ -31,6 +31,8 @@ import java.util.Objects;
 
 /**
  * Перечисление стандартов транслитерации.
+ *
+ * @author Aleksey Kalenchukov
  */
 public enum Standard
 {

@@ -33,6 +33,8 @@ import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ICAO DOC 9303.
+ *
+ * @author Aleksey Kalenchukov
  */
 public final class IcaoDoc9303Schema implements Schematic
 {

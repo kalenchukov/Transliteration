@@ -31,6 +31,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Класс проверки констант и методов перечисления {@link Standard}.
+ *
+ * @author Aleksey Kalenchukov
  */
 public class StandardTest
 {

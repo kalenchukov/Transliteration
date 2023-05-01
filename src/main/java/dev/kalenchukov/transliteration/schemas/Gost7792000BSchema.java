@@ -33,6 +33,8 @@ import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ГОСТ 7.79-2000 система B.
+ *
+ * @author Aleksey Kalenchukov
  */
 public final class Gost7792000BSchema implements Schematic
 {

@@ -33,6 +33,8 @@ import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
+ *
+ * @author Aleksey Kalenchukov
  */
 public final class Gost1687671ASchema implements Schematic
 {

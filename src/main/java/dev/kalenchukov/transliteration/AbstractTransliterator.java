@@ -35,6 +35,8 @@ import java.util.Objects;
 
 /**
  * Класс абстрактной транслитерации.
+ *
+ * @author Aleksey Kalenchukov
  */
 public abstract class AbstractTransliterator implements Transliterating
 {

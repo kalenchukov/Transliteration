@@ -31,6 +31,8 @@ import java.util.Map;
 
 /**
  * Интерфейс для классов схем транслитерации.
+ *
+ * @author Aleksey Kalenchukov
  */
 public interface Schematic
 {

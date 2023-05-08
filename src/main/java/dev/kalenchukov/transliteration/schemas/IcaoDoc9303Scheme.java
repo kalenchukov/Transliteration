@@ -36,12 +36,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class IcaoDoc9303Schema implements Schematic
+public final class IcaoDoc9303Scheme implements Schematic
 {
 	/**
-	 * Конструктор для {@code IcaoDoc9303Schema}.
+	 * Конструктор для {@code IcaoDoc9303Scheme}.
 	 */
-	public IcaoDoc9303Schema() {}
+	public IcaoDoc9303Scheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -151,17 +151,17 @@ public final class IcaoDoc9303Schema implements Schematic
 			return false;
 		}
 
-		IcaoDoc9303Schema icaoDoc9303Schema = (IcaoDoc9303Schema) obj;
+		IcaoDoc9303Scheme icaoDoc9303Scheme = (IcaoDoc9303Scheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), icaoDoc9303Schema.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), icaoDoc9303Scheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), icaoDoc9303Schema.getRules())) {
+		if (!Objects.equals(this.getRules(), icaoDoc9303Scheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), icaoDoc9303Schema.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), icaoDoc9303Scheme.getRulesNext())) {
 			return false;
 		}
 

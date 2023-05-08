@@ -17,6 +17,7 @@
 * Переименован класс Gost1687671BSchema -> RussianGost1687671BScheme.
 * Переименован класс Gost7792000ASchema -> RussianGost7792000AScheme.
 * Переименован класс Gost7792000BSchema -> RussianGost7792000BScheme.
+* Переименован класс IcaoDoc9303Schema -> RussianIcaoDoc9303Scheme.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

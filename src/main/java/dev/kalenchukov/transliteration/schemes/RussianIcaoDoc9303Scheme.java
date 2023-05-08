@@ -31,16 +31,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ICAO DOC 9303.
+ * Класс схемы транслитерации русского языка по стандарту ICAO DOC 9303.
  *
  * @author Aleksey Kalenchukov
  */
-public final class IcaoDoc9303Scheme extends AbstractScheme
+public final class RussianIcaoDoc9303Scheme extends AbstractScheme
 {
 	/**
-	 * Конструктор для {@code IcaoDoc9303Scheme}.
+	 * Конструктор для {@code RussianIcaoDoc9303Scheme}.
 	 */
-	public IcaoDoc9303Scheme() {}
+	public RussianIcaoDoc9303Scheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -126,7 +126,7 @@ public final class IcaoDoc9303Scheme extends AbstractScheme
 			return false;
 		}
 
-		IcaoDoc9303Scheme scheme = (IcaoDoc9303Scheme) obj;
+		RussianIcaoDoc9303Scheme scheme = (RussianIcaoDoc9303Scheme) obj;
 
 		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;

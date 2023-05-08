@@ -39,7 +39,7 @@ public enum Standard
 	/**
 	 * Русский язык по ICAO DOC 9303.
 	 */
-	RUSSIAN_ICAO_DOC_9303(new IcaoDoc9303Scheme()),
+	RUSSIAN_ICAO_DOC_9303(new RussianIcaoDoc9303Scheme()),
 
 	/**
 	 * Русский язык по ГОСТ 7.79-2000 схема A.

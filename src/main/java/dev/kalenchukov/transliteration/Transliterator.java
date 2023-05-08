@@ -37,7 +37,7 @@ import java.util.Objects;
 public class Transliterator extends AbstractTransliterator
 {
 	/**
-	 * Конструктор для {@code AbstractTransliteration}.
+	 * Конструктор для {@code Transliterator}.
 	 *
 	 * @param standard стандарт.
 	 */

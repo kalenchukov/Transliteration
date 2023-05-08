@@ -37,12 +37,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TransliteratorTest
 {
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#ICAO_DOC_9303}.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
-	public void testTranslateIcaoDoc9303()
+	public void testTranslateRussianIcaoDoc9303()
 	{
-		Transliterating transliterator = new Transliterator(Standard.ICAO_DOC_9303);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
 		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
 
 		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
@@ -110,14 +110,14 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#ICAO_DOC_9303}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
 	public void testTranslateIcaoDoc9303Static()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.ICAO_DOC_9303
+			Standard.RUSSIAN_ICAO_DOC_9303
 		);
 
 		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);

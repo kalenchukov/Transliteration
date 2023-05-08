@@ -7,8 +7,8 @@
 * Переименован класс Gost7792000BSchema -> Gost7792000BScheme.
 * Переименован класс IcaoDoc9303Schema -> IcaoDoc9303Scheme.
 * Переименован пакет schemas -> schemes.
-* Добавлен класс AbstractScheme.
 * Переименован метод Standard.getSchema() -> Standard.getScheme().
+* Переименовано Standard.ICAO_DOC_9303 -> Standard.RUSSIAN_ICAO_DOC_9303.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

@@ -37,9 +37,9 @@ import java.util.Objects;
 public enum Standard
 {
 	/**
-	 * ICAO DOC 9303.
+	 * Русский язык по ICAO DOC 9303.
 	 */
-	ICAO_DOC_9303(new IcaoDoc9303Scheme()),
+	RUSSIAN_ICAO_DOC_9303(new IcaoDoc9303Scheme()),
 
 	/**
 	 * ГОСТ 7.79-2000 схема A.

@@ -14,6 +14,7 @@
 * Переименовано Standard.GOST_16876_71A -> Standard.RUSSIAN_GOST_16876_71A.
 * Переименовано Standard.GOST_16876_71B -> Standard.RUSSIAN_GOST_16876_71B.
 * Переименован класс Gost1687671ASchema -> RussianGost1687671AScheme.
+* Переименован класс Gost1687671BSchema -> RussianGost1687671BScheme.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

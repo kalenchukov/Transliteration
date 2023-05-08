@@ -54,7 +54,7 @@ public enum Standard
 	/**
 	 * ГОСТ 16876-71 система А.
 	 */
-	GOST_16876_71A(new Gost1687671ASchema()),
+	GOST_16876_71A(new Gost1687671AScheme()),
 
 	/**
 	 * ГОСТ 16876-71 система B.

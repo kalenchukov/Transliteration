@@ -36,12 +36,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost1687671ASchema implements Schematic
+public final class Gost1687671AScheme implements Schematic
 {
 	/**
-	 * Конструктор для {@code Gost1687671ASchema}.
+	 * Конструктор для {@code Gost1687671AScheme}.
 	 */
-	public Gost1687671ASchema() {}
+	public Gost1687671AScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -151,17 +151,17 @@ public final class Gost1687671ASchema implements Schematic
 			return false;
 		}
 
-		Gost1687671ASchema gost1687671ASchema = (Gost1687671ASchema) obj;
+		Gost1687671AScheme gost1687671AScheme = (Gost1687671AScheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), gost1687671ASchema.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), gost1687671AScheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), gost1687671ASchema.getRules())) {
+		if (!Objects.equals(this.getRules(), gost1687671AScheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), gost1687671ASchema.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), gost1687671AScheme.getRulesNext())) {
 			return false;
 		}
 

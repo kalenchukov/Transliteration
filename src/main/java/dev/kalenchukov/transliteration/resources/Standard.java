@@ -44,7 +44,7 @@ public enum Standard
 	/**
 	 * ГОСТ 7.79-2000 схема A.
 	 */
-	GOST_7_79_2000A(new Gost7792000ASchema()),
+	GOST_7_79_2000A(new Gost7792000AScheme()),
 
 	/**
 	 * ГОСТ 7.79-2000 схема B.

@@ -24,7 +24,7 @@
 
 package dev.kalenchukov.transliteration.resources;
 
-import dev.kalenchukov.transliteration.schemas.Gost7792000ASchema;
+import dev.kalenchukov.transliteration.schemas.Gost7792000AScheme;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -42,6 +42,6 @@ public class StandardTest
 	@Test
 	public void getSchema()
 	{
-		assertEquals(new Gost7792000ASchema(), Standard.GOST_7_79_2000A.getSchema());
+		assertEquals(new Gost7792000AScheme(), Standard.GOST_7_79_2000A.getSchema());
 	}
 }

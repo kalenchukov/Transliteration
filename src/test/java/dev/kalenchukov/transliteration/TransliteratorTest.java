@@ -37,20 +37,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TransliteratorTest
 {
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)}.
-	 */
-	@Test
-	public void testTranslateStatic()
-	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_GOST_7_79_2000B
-		);
-
-		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
-	}
-
-	/**
 	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
@@ -58,6 +44,20 @@ public class TransliteratorTest
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
 		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+
+		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
+	 */
+	@Test
+	public void testTranslateRussianIcaoDoc9303Static()
+	{
+		String result = Transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
+			Standard.RUSSIAN_ICAO_DOC_9303
+		);
 
 		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
 	}
@@ -75,6 +75,20 @@ public class TransliteratorTest
 	}
 
 	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
+	 */
+	@Test
+	public void testTranslateRussianGost7792000AStatic()
+	{
+		String result = Transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
+			Standard.RUSSIAN_GOST_7_79_2000A
+		);
+
+		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+	}
+
+	/**
 	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
@@ -82,6 +96,20 @@ public class TransliteratorTest
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
 		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+
+		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 */
+	@Test
+	public void testTranslateRussianGost7792000BStatic()
+	{
+		String result = Transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
+			Standard.RUSSIAN_GOST_7_79_2000B
+		);
 
 		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
 	}
@@ -100,6 +128,21 @@ public class TransliteratorTest
 	}
 
 	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 * С особенностью, в зависимости от следующих букв.
+	 */
+	@Test
+	public void testTranslateRussianGost7792000BContractNextStatic()
+	{
+		String result = Transliterator.translate(
+			"Эх, чужд кайф, сплющь объём вши, грызя цент.",
+			Standard.RUSSIAN_GOST_7_79_2000B
+		);
+
+		assertEquals("E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.", result);
+	}
+
+	/**
 	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
@@ -112,6 +155,20 @@ public class TransliteratorTest
 	}
 
 	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
+	 */
+	@Test
+	public void testTranslateRussianGost1687671AStatic()
+	{
+		String result = Transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
+			Standard.RUSSIAN_GOST_16876_71A
+		);
+
+		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+	}
+
+	/**
 	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
@@ -119,6 +176,20 @@ public class TransliteratorTest
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
 		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+
+		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
+	 */
+	@Test
+	public void testTranslateRussianGost1687671BStatic()
+	{
+		String result = Transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
+			Standard.RUSSIAN_GOST_16876_71B
+		);
 
 		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
 	}

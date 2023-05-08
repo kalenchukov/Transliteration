@@ -31,16 +31,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
+ * Класс схемы транслитерации русского языка по стандарту ГОСТ 16876-71 система А.
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost1687671AScheme extends AbstractScheme
+public final class RussianGost1687671AScheme extends AbstractScheme
 {
 	/**
-	 * Конструктор для {@code Gost1687671AScheme}.
+	 * Конструктор для {@code RussianGost1687671AScheme}.
 	 */
-	public Gost1687671AScheme() {}
+	public RussianGost1687671AScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -126,7 +126,7 @@ public final class Gost1687671AScheme extends AbstractScheme
 			return false;
 		}
 
-		Gost1687671AScheme scheme = (Gost1687671AScheme) obj;
+		RussianGost1687671AScheme scheme = (RussianGost1687671AScheme) obj;
 
 		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;

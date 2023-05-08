@@ -54,7 +54,7 @@ public enum Standard
 	/**
 	 * Русский язык по ГОСТ 16876-71 система А.
 	 */
-	RUSSIAN_GOST_16876_71A(new Gost1687671AScheme()),
+	RUSSIAN_GOST_16876_71A(new RussianGost1687671AScheme()),
 
 	/**
 	 * Русский язык по ГОСТ 16876-71 система B.

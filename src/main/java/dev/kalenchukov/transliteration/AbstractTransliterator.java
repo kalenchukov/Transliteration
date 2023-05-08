@@ -127,7 +127,7 @@ public abstract class AbstractTransliterator implements Transliterating
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
 
-		for (Map.Entry<String, String> entry : standard.getSchema().getRulesPrevious().entrySet())
+		for (Map.Entry<String, String> entry : standard.getScheme().getRulesPrevious().entrySet())
 		{
 			int countSymbolsRules = entry.getKey().length();
 
@@ -137,7 +137,7 @@ public abstract class AbstractTransliterator implements Transliterating
 
 			String previousSymbols = text.substring((position + 1) - countSymbolsRules, position + 1).toLowerCase();
 
-			return standard.getSchema().getRulesPrevious().get(previousSymbols);
+			return standard.getScheme().getRulesPrevious().get(previousSymbols);
 		}
 
 		return null;
@@ -159,7 +159,7 @@ public abstract class AbstractTransliterator implements Transliterating
 
 		String currentSymbol = String.valueOf(text.charAt(position)).toLowerCase();
 
-		return standard.getSchema().getRules().get(currentSymbol);
+		return standard.getScheme().getRules().get(currentSymbol);
 	}
 
 	/**
@@ -176,7 +176,7 @@ public abstract class AbstractTransliterator implements Transliterating
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
 
-		for (Map.Entry<String, String> entry : standard.getSchema().getRulesNext().entrySet())
+		for (Map.Entry<String, String> entry : standard.getScheme().getRulesNext().entrySet())
 		{
 			int countSymbolsRules = entry.getKey().length();
 
@@ -186,7 +186,7 @@ public abstract class AbstractTransliterator implements Transliterating
 
 			String nextSymbols = text.substring(position, position + countSymbolsRules).toLowerCase();
 
-			return standard.getSchema().getRulesNext().get(nextSymbols);
+			return standard.getScheme().getRulesNext().get(nextSymbols);
 		}
 
 		return null;

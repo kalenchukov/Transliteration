@@ -65,18 +65,18 @@ public enum Standard
 	 * Объект схемы.
 	 */
 	@NotNull
-	private final Schematic schema;
+	private final Schematic scheme;
 
 	/**
 	 * Конструктор для {@code Standard}.
 	 *
-	 * @param schema схема.
+	 * @param scheme схема.
 	 */
-	Standard(@NotNull final Schematic schema)
+	Standard(@NotNull final Schematic scheme)
 	{
-		Objects.requireNonNull(schema);
+		Objects.requireNonNull(scheme);
 
-		this.schema = schema;
+		this.scheme = scheme;
 	}
 
 	/**
@@ -85,8 +85,8 @@ public enum Standard
 	 * @return объект схемы.
 	 */
 	@NotNull
-	public Schematic getSchema()
+	public Schematic getScheme()
 	{
-		return this.schema;
+		return this.scheme;
 	}
 }

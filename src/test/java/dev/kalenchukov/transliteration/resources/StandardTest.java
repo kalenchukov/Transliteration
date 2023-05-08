@@ -37,11 +37,11 @@ import static org.junit.jupiter.api.Assertions.*;
 public class StandardTest
 {
 	/**
-	 * Проверка метода {@link Standard#getSchema()}.
+	 * Проверка метода {@link Standard#getScheme()}.
 	 */
 	@Test
-	public void getSchema()
+	public void getScheme()
 	{
-		assertEquals(new Gost7792000AScheme(), Standard.GOST_7_79_2000A.getSchema());
+		assertEquals(new Gost7792000AScheme(), Standard.GOST_7_79_2000A.getScheme());
 	}
 }

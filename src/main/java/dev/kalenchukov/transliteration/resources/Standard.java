@@ -52,9 +52,9 @@ public enum Standard
 	RUSSIAN_GOST_7_79_2000B(new Gost7792000BScheme()),
 
 	/**
-	 * ГОСТ 16876-71 система А.
+	 * Русский язык по ГОСТ 16876-71 система А.
 	 */
-	GOST_16876_71A(new Gost1687671AScheme()),
+	RUSSIAN_GOST_16876_71A(new Gost1687671AScheme()),
 
 	/**
 	 * ГОСТ 16876-71 система B.

@@ -27,7 +27,6 @@ package dev.kalenchukov.transliteration.schemes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
 
@@ -36,24 +35,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class IcaoDoc9303Scheme implements Schematic
+public final class IcaoDoc9303Scheme extends AbstractScheme
 {
 	/**
 	 * Конструктор для {@code IcaoDoc9303Scheme}.
 	 */
 	public IcaoDoc9303Scheme() {}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesPrevious()
-	{
-		return Collections.emptyMap();
-	}
 
 	/**
 	 * {@inheritDoc}
@@ -99,18 +86,6 @@ public final class IcaoDoc9303Scheme implements Schematic
 			Map.entry("ю", "iu"),
 			Map.entry("я", "ia")
 		);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesNext()
-	{
-		return Collections.emptyMap();
 	}
 
 	/**

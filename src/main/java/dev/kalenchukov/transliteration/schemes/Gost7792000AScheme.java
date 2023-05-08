@@ -36,24 +36,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost7792000AScheme implements Schematic
+public final class Gost7792000AScheme extends AbstractScheme
 {
 	/**
 	 * Конструктор для {@code Gost7792000AScheme}.
 	 */
 	public Gost7792000AScheme() {}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesPrevious()
-	{
-		return Collections.emptyMap();
-	}
 
 	/**
 	 * {@inheritDoc}
@@ -99,18 +87,6 @@ public final class Gost7792000AScheme implements Schematic
 			Map.entry("ю", "û"),
 			Map.entry("я", "â")
 		);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesNext()
-	{
-		return Collections.emptyMap();
 	}
 
 	/**

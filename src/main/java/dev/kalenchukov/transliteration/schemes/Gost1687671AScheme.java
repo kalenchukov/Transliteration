@@ -27,7 +27,6 @@ package dev.kalenchukov.transliteration.schemes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
 
@@ -36,24 +35,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost1687671AScheme implements Schematic
+public final class Gost1687671AScheme extends AbstractScheme
 {
 	/**
 	 * Конструктор для {@code Gost1687671AScheme}.
 	 */
 	public Gost1687671AScheme() {}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesPrevious()
-	{
-		return Collections.emptyMap();
-	}
 
 	/**
 	 * {@inheritDoc}
@@ -99,18 +86,6 @@ public final class Gost1687671AScheme implements Schematic
 			Map.entry("ю", "û"),
 			Map.entry("я", "â")
 		);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesNext()
-	{
-		return Collections.emptyMap();
 	}
 
 	/**

@@ -36,24 +36,12 @@ import java.util.Objects;
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost7792000BScheme implements Schematic
+public final class Gost7792000BScheme extends AbstractScheme
 {
 	/**
 	 * Конструктор для {@code Gost7792000BScheme}.
 	 */
 	public Gost7792000BScheme() {}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@NotNull
-	@Override
-	public Map<@NotNull String, @NotNull String> getRulesPrevious()
-	{
-		return Collections.emptyMap();
-	}
 
 	/**
 	 * {@inheritDoc}

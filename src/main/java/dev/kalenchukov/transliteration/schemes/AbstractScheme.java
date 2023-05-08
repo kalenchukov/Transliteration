@@ -29,6 +29,11 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Collections;
 import java.util.Map;
 
+/**
+ * Класс схемы транслитерации по абстрактному стандарту.
+ *
+ * @author Aleksey Kalenchukov
+ */
 public abstract class AbstractScheme implements Schematic
 {
 	/**

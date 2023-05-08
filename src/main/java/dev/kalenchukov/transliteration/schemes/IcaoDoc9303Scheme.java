@@ -126,17 +126,17 @@ public final class IcaoDoc9303Scheme extends AbstractScheme
 			return false;
 		}
 
-		IcaoDoc9303Scheme icaoDoc9303Scheme = (IcaoDoc9303Scheme) obj;
+		IcaoDoc9303Scheme scheme = (IcaoDoc9303Scheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), icaoDoc9303Scheme.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), icaoDoc9303Scheme.getRules())) {
+		if (!Objects.equals(this.getRules(), scheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), icaoDoc9303Scheme.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), scheme.getRulesNext())) {
 			return false;
 		}
 

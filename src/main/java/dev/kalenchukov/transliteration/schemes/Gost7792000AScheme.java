@@ -127,17 +127,17 @@ public final class Gost7792000AScheme extends AbstractScheme
 			return false;
 		}
 
-		Gost7792000AScheme gost7792000AScheme = (Gost7792000AScheme) obj;
+		Gost7792000AScheme scheme = (Gost7792000AScheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), gost7792000AScheme.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), gost7792000AScheme.getRules())) {
+		if (!Objects.equals(this.getRules(), scheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), gost7792000AScheme.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), scheme.getRulesNext())) {
 			return false;
 		}
 

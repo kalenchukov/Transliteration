@@ -42,9 +42,9 @@ public enum Standard
 	RUSSIAN_ICAO_DOC_9303(new IcaoDoc9303Scheme()),
 
 	/**
-	 * ГОСТ 7.79-2000 схема A.
+	 * Русский язык по ГОСТ 7.79-2000 схема A.
 	 */
-	GOST_7_79_2000A(new Gost7792000AScheme()),
+	RUSSIAN_GOST_7_79_2000A(new Gost7792000AScheme()),
 
 	/**
 	 * ГОСТ 7.79-2000 схема B.

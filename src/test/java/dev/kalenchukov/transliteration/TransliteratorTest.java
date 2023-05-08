@@ -49,12 +49,12 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#GOST_7_79_2000A}.
+	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
-	public void testTranslateGost7792000A()
+	public void testTranslateRussianGost7792000A()
 	{
-		Transliterating transliterator = new Transliterator(Standard.GOST_7_79_2000A);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
 		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
 
 		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
@@ -124,14 +124,14 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#GOST_7_79_2000A}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
 	public void testTranslateGost7792000AStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.GOST_7_79_2000A
+			Standard.RUSSIAN_GOST_7_79_2000A
 		);
 
 		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);

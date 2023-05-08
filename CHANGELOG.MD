@@ -9,6 +9,7 @@
 * Переименован пакет schemas -> schemes.
 * Переименован метод Standard.getSchema() -> Standard.getScheme().
 * Переименовано Standard.ICAO_DOC_9303 -> Standard.RUSSIAN_ICAO_DOC_9303.
+* Переименовано Standard.GOST_7_79_2000A -> Standard.RUSSIAN_GOST_7_79_2000A.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

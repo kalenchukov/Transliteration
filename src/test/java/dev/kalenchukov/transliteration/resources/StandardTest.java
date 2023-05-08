@@ -42,6 +42,6 @@ public class StandardTest
 	@Test
 	public void getScheme()
 	{
-		assertEquals(new Gost7792000AScheme(), Standard.GOST_7_79_2000A.getScheme());
+		assertEquals(new Gost7792000AScheme(), Standard.RUSSIAN_GOST_7_79_2000A.getScheme());
 	}
 }

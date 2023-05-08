@@ -31,7 +31,7 @@ import dev.kalenchukov.transliteration.Transliterator;
 
 Transliterator.translate(
     "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-    Standard.GOST_7_79_2000A
+    Standard.RUSSIAN_GOST_7_79_2000A
 );
 ```
 

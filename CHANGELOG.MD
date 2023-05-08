@@ -2,6 +2,7 @@
 ## vX.X.X - XX.XX.XXXX
 ### Изменено
 * Переименован класс Gost1687671ASchema -> Gost1687671AScheme.
+* Переименован класс Gost1687671BSchema -> Gost1687671BScheme.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

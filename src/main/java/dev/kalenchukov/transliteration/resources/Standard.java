@@ -59,7 +59,7 @@ public enum Standard
 	/**
 	 * ГОСТ 16876-71 система B.
 	 */
-	GOST_16876_71B(new Gost1687671BSchema());
+	GOST_16876_71B(new Gost1687671BScheme());
 
 	/**
 	 * Объект схемы.

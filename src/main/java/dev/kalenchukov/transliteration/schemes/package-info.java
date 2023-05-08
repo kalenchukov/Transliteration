@@ -25,4 +25,4 @@
 /**
  * Предоставляет классы, необходимые для описания схем транслитерации по стандартам.
  */
-package dev.kalenchukov.transliteration.schemas;
+package dev.kalenchukov.transliteration.schemes;

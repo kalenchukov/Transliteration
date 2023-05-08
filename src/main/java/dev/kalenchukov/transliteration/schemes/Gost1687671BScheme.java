@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package dev.kalenchukov.transliteration.schemas;
+package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -32,16 +32,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ICAO DOC 9303.
+ * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система B.
  *
  * @author Aleksey Kalenchukov
  */
-public final class IcaoDoc9303Scheme implements Schematic
+public final class Gost1687671BScheme implements Schematic
 {
 	/**
-	 * Конструктор для {@code IcaoDoc9303Scheme}.
+	 * Конструктор для {@code Gost1687671BScheme}.
 	 */
-	public IcaoDoc9303Scheme() {}
+	public Gost1687671BScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -71,11 +71,11 @@ public final class IcaoDoc9303Scheme implements Schematic
 			Map.entry("г", "g"),
 			Map.entry("д", "d"),
 			Map.entry("е", "e"),
-			Map.entry("ё", "e"),
+			Map.entry("ё", "jo"),
 			Map.entry("ж", "zh"),
 			Map.entry("з", "z"),
 			Map.entry("и", "i"),
-			Map.entry("й", "i"),
+			Map.entry("й", "jj"),
 			Map.entry("к", "k"),
 			Map.entry("л", "l"),
 			Map.entry("м", "m"),
@@ -88,16 +88,16 @@ public final class IcaoDoc9303Scheme implements Schematic
 			Map.entry("у", "u"),
 			Map.entry("ф", "f"),
 			Map.entry("х", "kh"),
-			Map.entry("ц", "ts"),
+			Map.entry("ц", "c"),
 			Map.entry("ч", "ch"),
 			Map.entry("ш", "sh"),
-			Map.entry("щ", "shch"),
-			Map.entry("ъ", "ie"),
+			Map.entry("щ", "shh"),
+			Map.entry("ъ", "\""),
 			Map.entry("ы", "y"),
-			Map.entry("ь", ""),
-			Map.entry("э", "e"),
-			Map.entry("ю", "iu"),
-			Map.entry("я", "ia")
+			Map.entry("ь", "'"),
+			Map.entry("э", "eh"),
+			Map.entry("ю", "ju"),
+			Map.entry("я", "ja")
 		);
 	}
 
@@ -151,17 +151,17 @@ public final class IcaoDoc9303Scheme implements Schematic
 			return false;
 		}
 
-		IcaoDoc9303Scheme icaoDoc9303Scheme = (IcaoDoc9303Scheme) obj;
+		Gost1687671BScheme gost1687671BScheme = (Gost1687671BScheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), icaoDoc9303Scheme.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), gost1687671BScheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), icaoDoc9303Scheme.getRules())) {
+		if (!Objects.equals(this.getRules(), gost1687671BScheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), icaoDoc9303Scheme.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), gost1687671BScheme.getRulesNext())) {
 			return false;
 		}
 

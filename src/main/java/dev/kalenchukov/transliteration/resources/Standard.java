@@ -24,7 +24,7 @@
 
 package dev.kalenchukov.transliteration.resources;
 
-import dev.kalenchukov.transliteration.schemas.*;
+import dev.kalenchukov.transliteration.schemes.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;

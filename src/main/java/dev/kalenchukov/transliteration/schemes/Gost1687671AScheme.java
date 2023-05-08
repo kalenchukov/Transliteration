@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package dev.kalenchukov.transliteration.schemas;
+package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -32,16 +32,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система B.
+ * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost1687671BScheme implements Schematic
+public final class Gost1687671AScheme implements Schematic
 {
 	/**
-	 * Конструктор для {@code Gost1687671BScheme}.
+	 * Конструктор для {@code Gost1687671AScheme}.
 	 */
-	public Gost1687671BScheme() {}
+	public Gost1687671AScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -71,11 +71,11 @@ public final class Gost1687671BScheme implements Schematic
 			Map.entry("г", "g"),
 			Map.entry("д", "d"),
 			Map.entry("е", "e"),
-			Map.entry("ё", "jo"),
-			Map.entry("ж", "zh"),
+			Map.entry("ё", "ё"),
+			Map.entry("ж", "ž"),
 			Map.entry("з", "z"),
 			Map.entry("и", "i"),
-			Map.entry("й", "jj"),
+			Map.entry("й", "j"),
 			Map.entry("к", "k"),
 			Map.entry("л", "l"),
 			Map.entry("м", "m"),
@@ -87,17 +87,17 @@ public final class Gost1687671BScheme implements Schematic
 			Map.entry("т", "t"),
 			Map.entry("у", "u"),
 			Map.entry("ф", "f"),
-			Map.entry("х", "kh"),
+			Map.entry("х", "h"),
 			Map.entry("ц", "c"),
-			Map.entry("ч", "ch"),
-			Map.entry("ш", "sh"),
-			Map.entry("щ", "shh"),
-			Map.entry("ъ", "\""),
+			Map.entry("ч", "č"),
+			Map.entry("ш", "š"),
+			Map.entry("щ", "ŝ"),
+			Map.entry("ъ", "ʺ"),
 			Map.entry("ы", "y"),
-			Map.entry("ь", "'"),
-			Map.entry("э", "eh"),
-			Map.entry("ю", "ju"),
-			Map.entry("я", "ja")
+			Map.entry("ь", "ʹ"),
+			Map.entry("э", "è"),
+			Map.entry("ю", "û"),
+			Map.entry("я", "â")
 		);
 	}
 
@@ -151,17 +151,17 @@ public final class Gost1687671BScheme implements Schematic
 			return false;
 		}
 
-		Gost1687671BScheme gost1687671BScheme = (Gost1687671BScheme) obj;
+		Gost1687671AScheme gost1687671AScheme = (Gost1687671AScheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), gost1687671BScheme.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), gost1687671AScheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), gost1687671BScheme.getRules())) {
+		if (!Objects.equals(this.getRules(), gost1687671AScheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), gost1687671BScheme.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), gost1687671AScheme.getRulesNext())) {
 			return false;
 		}
 

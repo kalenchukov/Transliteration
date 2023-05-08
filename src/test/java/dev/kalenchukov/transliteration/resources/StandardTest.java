@@ -24,7 +24,7 @@
 
 package dev.kalenchukov.transliteration.resources;
 
-import dev.kalenchukov.transliteration.schemas.Gost7792000AScheme;
+import dev.kalenchukov.transliteration.schemes.Gost7792000AScheme;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

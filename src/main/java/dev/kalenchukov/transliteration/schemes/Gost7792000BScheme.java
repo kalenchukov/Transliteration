@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package dev.kalenchukov.transliteration.schemas;
+package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -32,16 +32,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ГОСТ 16876-71 система А.
+ * Класс схемы транслитерации по стандарту ГОСТ 7.79-2000 система B.
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost1687671AScheme implements Schematic
+public final class Gost7792000BScheme implements Schematic
 {
 	/**
-	 * Конструктор для {@code Gost1687671AScheme}.
+	 * Конструктор для {@code Gost7792000BScheme}.
 	 */
-	public Gost1687671AScheme() {}
+	public Gost7792000BScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -71,8 +71,8 @@ public final class Gost1687671AScheme implements Schematic
 			Map.entry("г", "g"),
 			Map.entry("д", "d"),
 			Map.entry("е", "e"),
-			Map.entry("ё", "ё"),
-			Map.entry("ж", "ž"),
+			Map.entry("ё", "yo"),
+			Map.entry("ж", "zh"),
 			Map.entry("з", "z"),
 			Map.entry("и", "i"),
 			Map.entry("й", "j"),
@@ -87,17 +87,17 @@ public final class Gost1687671AScheme implements Schematic
 			Map.entry("т", "t"),
 			Map.entry("у", "u"),
 			Map.entry("ф", "f"),
-			Map.entry("х", "h"),
-			Map.entry("ц", "c"),
-			Map.entry("ч", "č"),
-			Map.entry("ш", "š"),
-			Map.entry("щ", "ŝ"),
-			Map.entry("ъ", "ʺ"),
-			Map.entry("ы", "y"),
-			Map.entry("ь", "ʹ"),
-			Map.entry("э", "è"),
-			Map.entry("ю", "û"),
-			Map.entry("я", "â")
+			Map.entry("х", "x"),
+			Map.entry("ц", "cz"),
+			Map.entry("ч", "ch"),
+			Map.entry("ш", "sh"),
+			Map.entry("щ", "shh"),
+			Map.entry("ъ", "``"),
+			Map.entry("ы", "y`"),
+			Map.entry("ь", "`"),
+			Map.entry("э", "e`"),
+			Map.entry("ю", "yu"),
+			Map.entry("я", "ya")
 		);
 	}
 
@@ -110,7 +110,12 @@ public final class Gost1687671AScheme implements Schematic
 	@Override
 	public Map<@NotNull String, @NotNull String> getRulesNext()
 	{
-		return Collections.emptyMap();
+		return Map.ofEntries(
+			Map.entry("це", "c"),
+			Map.entry("ци", "c"),
+			Map.entry("цй", "c"),
+			Map.entry("цы", "c")
+		);
 	}
 
 	/**
@@ -151,17 +156,17 @@ public final class Gost1687671AScheme implements Schematic
 			return false;
 		}
 
-		Gost1687671AScheme gost1687671AScheme = (Gost1687671AScheme) obj;
+		Gost7792000BScheme gost7792000BScheme = (Gost7792000BScheme) obj;
 
-		if (!Objects.equals(this.getRulesPrevious(), gost1687671AScheme.getRulesPrevious())) {
+		if (!Objects.equals(this.getRulesPrevious(), gost7792000BScheme.getRulesPrevious())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRules(), gost1687671AScheme.getRules())) {
+		if (!Objects.equals(this.getRules(), gost7792000BScheme.getRules())) {
 			return false;
 		}
 
-		if (!Objects.equals(this.getRulesNext(), gost1687671AScheme.getRulesNext())) {
+		if (!Objects.equals(this.getRulesNext(), gost7792000BScheme.getRulesNext())) {
 			return false;
 		}
 

@@ -31,16 +31,16 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ГОСТ 7.79-2000 система B.
+ * Класс схемы транслитерации русского языка по стандарту ГОСТ 7.79-2000 система B.
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost7792000BScheme extends AbstractScheme
+public final class RussianGost7792000BScheme extends AbstractScheme
 {
 	/**
-	 * Конструктор для {@code Gost7792000BScheme}.
+	 * Конструктор для {@code RussianGost7792000BScheme}.
 	 */
-	public Gost7792000BScheme() {}
+	public RussianGost7792000BScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -143,7 +143,7 @@ public final class Gost7792000BScheme extends AbstractScheme
 			return false;
 		}
 
-		Gost7792000BScheme scheme = (Gost7792000BScheme) obj;
+		RussianGost7792000BScheme scheme = (RussianGost7792000BScheme) obj;
 
 		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;

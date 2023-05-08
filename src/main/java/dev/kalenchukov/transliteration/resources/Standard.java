@@ -49,7 +49,7 @@ public enum Standard
 	/**
 	 * Русский язык по ГОСТ 7.79-2000 схема B.
 	 */
-	RUSSIAN_GOST_7_79_2000B(new Gost7792000BScheme()),
+	RUSSIAN_GOST_7_79_2000B(new RussianGost7792000BScheme()),
 
 	/**
 	 * Русский язык по ГОСТ 16876-71 система А.

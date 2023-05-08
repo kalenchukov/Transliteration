@@ -16,6 +16,7 @@
 * Переименован класс Gost1687671ASchema -> RussianGost1687671AScheme.
 * Переименован класс Gost1687671BSchema -> RussianGost1687671BScheme.
 * Переименован класс Gost7792000ASchema -> RussianGost7792000AScheme.
+* Переименован класс Gost7792000BSchema -> RussianGost7792000BScheme.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

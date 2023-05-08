@@ -33,7 +33,7 @@
 	<version>1.2.0</version>
 
 	<name>Transliteration</name>
-	<description>Транслитерация кириллического письма латинским алфавитом.</description>
+	<description>Транслитерация письма латинским алфавитом.</description>
 	<url>https://github.com/kalenchukov/Transliteration</url>
 
 	<licenses>

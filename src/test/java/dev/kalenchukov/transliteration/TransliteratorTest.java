@@ -37,19 +37,23 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TransliteratorTest
 {
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
 	public void testTranslateRussianIcaoDoc9303()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
-		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+		String result = transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
+		);
 
 		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
 	public void testTranslateRussianIcaoDoc9303Static()
@@ -63,19 +67,23 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
 	public void testTranslateRussianGost7792000A()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
-		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+		String result = transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
+		);
 
 		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
 	public void testTranslateRussianGost7792000AStatic()
@@ -89,19 +97,23 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
 	public void testTranslateRussianGost7792000B()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+		String result = transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
+		);
 
 		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
 	public void testTranslateRussianGost7792000BStatic()
@@ -115,20 +127,24 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
 	public void testTranslateRussianGost7792000BContractNext()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate("Эх, чужд кайф, сплющь объём вши, грызя цент.");
+		String result = transliterator.translate(
+			"Эх, чужд кайф, сплющь объём вши, грызя цент."
+		);
 
 		assertEquals("E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
@@ -143,19 +159,23 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
 	public void testTranslateRussianGost1687671A()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71A);
-		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+		String result = transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
+		);
 
 		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
 	public void testTranslateRussianGost1687671AStatic()
@@ -169,19 +189,23 @@ public class TransliteratorTest
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
 	public void testTranslateRussianGost1687671B()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
-		String result = transliterator.translate("Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.");
+		String result = transliterator.translate(
+			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
+		);
 
 		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
 	}
 
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} по стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
 	public void testTranslateRussianGost1687671BStatic()
@@ -192,5 +216,67 @@ public class TransliteratorTest
 		);
 
 		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+	 */
+	@Test
+	public void testTranslateBelarusianGost7792000B()
+	{
+		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+		String result = transliterator.translate(
+			"У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай."
+		);
+
+		assertEquals("U Iu`i xudy` zhvavy` chort u zyalyonaj kamize`l`cy` pabeh pad’esczi farshu z yushkaj.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+	 */
+	@Test
+	public void testTranslateBelarusianGost7792000BStatic()
+	{
+		String result = Transliterator.translate(
+			"У рудога вераб’я ў сховішчы пад фатэлем ляжаць нейкія гаючыя зёлкі.",
+			Standard.BELARUSIAN_GOST_7_79_2000B
+		);
+
+		assertEquals("U rudoha verab’ya u` sxovishchy` pad fate`lem lyazhacz` nejkiya hayuchy`ya zyolki.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String)} по
+	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+	 * С особенностью, в зависимости от следующих букв.
+	 */
+	@Test
+	public void testTranslateBelarusianGost7792000BContractNext()
+	{
+		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+		String result = transliterator.translate(
+			"Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты."
+		);
+
+		assertEquals("Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.", result);
+	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} по
+	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+	 * С особенностью, в зависимости от следующих букв.
+	 */
+	@Test
+	public void testTranslateBelarusianGost7792000BContractNextStatic()
+	{
+		String result = Transliterator.translate(
+			"Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.",
+			Standard.BELARUSIAN_GOST_7_79_2000B
+		);
+
+		assertEquals("Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.", result);
 	}
 }

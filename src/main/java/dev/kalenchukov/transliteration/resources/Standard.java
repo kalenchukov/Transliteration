@@ -59,7 +59,12 @@ public enum Standard
 	/**
 	 * Русский язык по ГОСТ 16876-71 система B.
 	 */
-	RUSSIAN_GOST_16876_71B(new RussianGost1687671BScheme());
+	RUSSIAN_GOST_16876_71B(new RussianGost1687671BScheme()),
+
+	/**
+	 * Белорусский язык по ГОСТ 7.79-2000 схема B.
+	 */
+	BELARUSIAN_GOST_7_79_2000B(new BelarusianGost7792000BScheme());
 
 	/**
 	 * Объект схемы.

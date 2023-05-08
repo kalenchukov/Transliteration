@@ -1,11 +1,10 @@
 # Журнал изменений
 ## vX.X.X - XX.XX.XXXX
+### Добавлено
+* Добавлен класс BelarusianGost7792000BScheme.
+* Добавлено перечисление Standard.BELARUSIAN_GOST_7_79_2000B.
+
 ### Изменено
-* Переименован класс Gost1687671ASchema -> Gost1687671AScheme.
-* Переименован класс Gost1687671BSchema -> Gost1687671BScheme.
-* Переименован класс Gost7792000ASchema -> Gost7792000AScheme.
-* Переименован класс Gost7792000BSchema -> Gost7792000BScheme.
-* Переименован класс IcaoDoc9303Schema -> IcaoDoc9303Scheme.
 * Переименован пакет schemas -> schemes.
 * Переименован метод Standard.getSchema() -> Standard.getScheme().
 * Переименовано Standard.ICAO_DOC_9303 -> Standard.RUSSIAN_ICAO_DOC_9303.
@@ -18,6 +17,7 @@
 * Переименован класс Gost7792000ASchema -> RussianGost7792000AScheme.
 * Переименован класс Gost7792000BSchema -> RussianGost7792000BScheme.
 * Переименован класс IcaoDoc9303Schema -> RussianIcaoDoc9303Scheme.
+* Обновлён README.MD.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

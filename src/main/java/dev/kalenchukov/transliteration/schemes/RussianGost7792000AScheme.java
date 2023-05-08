@@ -27,21 +27,20 @@ package dev.kalenchukov.transliteration.schemes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Collections;
 import java.util.Map;
 import java.util.Objects;
 
 /**
- * Класс схемы транслитерации по стандарту ГОСТ 7.79-2000 система А.
+ * Класс схемы транслитерации русского языка по стандарту ГОСТ 7.79-2000 система А.
  *
  * @author Aleksey Kalenchukov
  */
-public final class Gost7792000AScheme extends AbstractScheme
+public final class RussianGost7792000AScheme extends AbstractScheme
 {
 	/**
-	 * Конструктор для {@code Gost7792000AScheme}.
+	 * Конструктор для {@code RussianGost7792000AScheme}.
 	 */
-	public Gost7792000AScheme() {}
+	public RussianGost7792000AScheme() {}
 
 	/**
 	 * {@inheritDoc}
@@ -127,7 +126,7 @@ public final class Gost7792000AScheme extends AbstractScheme
 			return false;
 		}
 
-		Gost7792000AScheme scheme = (Gost7792000AScheme) obj;
+		RussianGost7792000AScheme scheme = (RussianGost7792000AScheme) obj;
 
 		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
 			return false;

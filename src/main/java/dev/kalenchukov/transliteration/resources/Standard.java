@@ -44,7 +44,7 @@ public enum Standard
 	/**
 	 * Русский язык по ГОСТ 7.79-2000 схема A.
 	 */
-	RUSSIAN_GOST_7_79_2000A(new Gost7792000AScheme()),
+	RUSSIAN_GOST_7_79_2000A(new RussianGost7792000AScheme()),
 
 	/**
 	 * Русский язык по ГОСТ 7.79-2000 схема B.

@@ -24,7 +24,7 @@
 
 package dev.kalenchukov.transliteration.resources;
 
-import dev.kalenchukov.transliteration.schemes.Gost7792000AScheme;
+import dev.kalenchukov.transliteration.schemes.RussianGost7792000AScheme;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -42,6 +42,6 @@ public class StandardTest
 	@Test
 	public void getScheme()
 	{
-		assertEquals(new Gost7792000AScheme(), Standard.RUSSIAN_GOST_7_79_2000A.getScheme());
+		assertEquals(new RussianGost7792000AScheme(), Standard.RUSSIAN_GOST_7_79_2000A.getScheme());
 	}
 }

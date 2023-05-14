@@ -1,5 +1,5 @@
 # Журнал изменений
-## vX.X.X - XX.XX.XXXX
+## v1.3.0 - 14.05.2023
 ### Добавлено
 * Добавлен класс BelarusianGost7792000BScheme.
 * Добавлено перечисление Standard.BELARUSIAN_GOST_7_79_2000B.

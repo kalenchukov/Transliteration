@@ -32,7 +32,7 @@ import java.util.Objects;
 /**
  * Класс транслитерации.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public class Transliterator extends AbstractTransliterator
 {

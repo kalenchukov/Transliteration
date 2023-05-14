@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Интерфейс для реализации классов транслитерации.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public interface Transliterating
 {

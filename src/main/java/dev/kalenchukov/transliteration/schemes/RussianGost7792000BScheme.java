@@ -33,7 +33,7 @@ import java.util.Objects;
 /**
  * Класс схемы транслитерации русского языка по стандарту ГОСТ 7.79-2000 система B.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public final class RussianGost7792000BScheme extends AbstractScheme
 {

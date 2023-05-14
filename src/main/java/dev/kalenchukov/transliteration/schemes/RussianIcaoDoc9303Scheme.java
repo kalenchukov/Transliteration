@@ -33,7 +33,7 @@ import java.util.Objects;
 /**
  * Класс схемы транслитерации русского языка по стандарту ICAO DOC 9303.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public final class RussianIcaoDoc9303Scheme extends AbstractScheme
 {

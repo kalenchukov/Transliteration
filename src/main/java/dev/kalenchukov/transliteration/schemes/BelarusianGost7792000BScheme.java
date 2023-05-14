@@ -33,7 +33,7 @@ import java.util.Objects;
 /**
  * Класс схемы транслитерации белорусского языка по стандарту ГОСТ 7.79-2000 система B.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public final class BelarusianGost7792000BScheme extends AbstractScheme
 {

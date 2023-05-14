@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  * Интерфейс для классов схем транслитерации.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public interface Schematic
 {

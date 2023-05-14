@@ -32,7 +32,7 @@ import java.util.Objects;
 /**
  * Перечисление стандартов транслитерации.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public enum Standard
 {

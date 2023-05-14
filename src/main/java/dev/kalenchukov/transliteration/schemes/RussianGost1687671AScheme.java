@@ -33,7 +33,7 @@ import java.util.Objects;
 /**
  * Класс схемы транслитерации русского языка по стандарту ГОСТ 16876-71 система А.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public final class RussianGost1687671AScheme extends AbstractScheme
 {

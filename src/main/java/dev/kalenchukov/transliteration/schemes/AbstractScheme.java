@@ -32,7 +32,7 @@ import java.util.Map;
 /**
  * Класс схемы транслитерации по абстрактному стандарту.
  *
- * @author Aleksey Kalenchukov
+ * @author Алексей Каленчуков
  */
 public abstract class AbstractScheme implements Schematic
 {

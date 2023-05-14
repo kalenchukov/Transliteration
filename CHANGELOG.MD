@@ -18,6 +18,7 @@
 * Переименован класс Gost7792000BSchema -> RussianGost7792000BScheme.
 * Переименован класс IcaoDoc9303Schema -> RussianIcaoDoc9303Scheme.
 * Обновлён README.MD.
+* Изменена версия Java на 18.
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено

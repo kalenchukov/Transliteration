@@ -1,4 +1,17 @@
 # Журнал изменений
+## vX.X.X - XX.XX.XXXX
+### Добавлено
+*
+
+### Изменено
+* Конструктор AbstractTransliterator.AbstractTransliterator(Standard) сделан protected.
+
+### Исправлено
+*
+
+### Удалено
+*
+
 ## v1.3.0 - 14.05.2023
 ### Добавлено
 * Добавлен класс BelarusianGost7792000BScheme.

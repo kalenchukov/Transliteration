@@ -50,7 +50,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 *
 	 * @param standard стандарт.
 	 */
-	public AbstractTransliterator(@NotNull final Standard standard)
+	protected AbstractTransliterator(@NotNull final Standard standard)
 	{
 		Objects.requireNonNull(standard);
 

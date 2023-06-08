@@ -41,7 +41,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
-	public void testTranslateRussianIcaoDoc9303()
+	public void translateRussianIcaoDoc9303()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
 		String result = transliterator.translate(
@@ -56,7 +56,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
-	public void testTranslateRussianIcaoDoc9303Static()
+	public void translateRussianIcaoDoc9303Static()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -71,7 +71,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000A()
+	public void translateRussianGost7792000A()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
 		String result = transliterator.translate(
@@ -86,7 +86,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000AStatic()
+	public void translateRussianGost7792000AStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -101,7 +101,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000B()
+	public void translateRussianGost7792000B()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
 		String result = transliterator.translate(
@@ -116,7 +116,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000BStatic()
+	public void translateRussianGost7792000BStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -132,7 +132,7 @@ public class TransliteratorTest
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000BContractNext()
+	public void translateRussianGost7792000BContractNext()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
 		String result = transliterator.translate(
@@ -148,7 +148,7 @@ public class TransliteratorTest
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateRussianGost7792000BContractNextStatic()
+	public void translateRussianGost7792000BContractNextStatic()
 	{
 		String result = Transliterator.translate(
 			"Эх, чужд кайф, сплющь объём вши, грызя цент.",
@@ -163,7 +163,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
-	public void testTranslateRussianGost1687671A()
+	public void translateRussianGost1687671A()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71A);
 		String result = transliterator.translate(
@@ -178,7 +178,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
-	public void testTranslateRussianGost1687671AStatic()
+	public void translateRussianGost1687671AStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -193,7 +193,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
-	public void testTranslateRussianGost1687671B()
+	public void translateRussianGost1687671B()
 	{
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
 		String result = transliterator.translate(
@@ -208,7 +208,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
-	public void testTranslateRussianGost1687671BStatic()
+	public void translateRussianGost1687671BStatic()
 	{
 		String result = Transliterator.translate(
 			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
@@ -223,7 +223,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
-	public void testTranslateBelarusianGost7792000B()
+	public void translateBelarusianGost7792000B()
 	{
 		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
 		String result = transliterator.translate(
@@ -238,7 +238,7 @@ public class TransliteratorTest
 	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
 	 */
 	@Test
-	public void testTranslateBelarusianGost7792000BStatic()
+	public void translateBelarusianGost7792000BStatic()
 	{
 		String result = Transliterator.translate(
 			"У рудога вераб’я ў сховішчы пад фатэлем ляжаць нейкія гаючыя зёлкі.",
@@ -254,7 +254,7 @@ public class TransliteratorTest
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateBelarusianGost7792000BContractNext()
+	public void translateBelarusianGost7792000BContractNext()
 	{
 		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
 		String result = transliterator.translate(
@@ -270,7 +270,7 @@ public class TransliteratorTest
 	 * С особенностью, в зависимости от следующих букв.
 	 */
 	@Test
-	public void testTranslateBelarusianGost7792000BContractNextStatic()
+	public void translateBelarusianGost7792000BContractNextStatic()
 	{
 		String result = Transliterator.translate(
 			"Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.",

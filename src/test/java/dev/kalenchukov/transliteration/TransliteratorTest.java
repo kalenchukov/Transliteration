@@ -43,12 +43,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianIcaoDoc9303()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
-		String result = transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.";
 
-		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -58,12 +59,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianIcaoDoc9303Static()
 	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_ICAO_DOC_9303
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.";
 
-		assertEquals("Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -73,12 +74,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000A()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
-		String result = transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
 
-		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -88,12 +90,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000AStatic()
 	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_GOST_7_79_2000A
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
 
-		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000A);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -103,12 +105,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000B()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.";
 
-		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -118,12 +121,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000BStatic()
 	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_GOST_7_79_2000B
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.";
 
-		assertEquals("E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000B);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -134,12 +137,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000BContractNext()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate(
-			"Эх, чужд кайф, сплющь объём вши, грызя цент."
-		);
+		String value = "Эх, чужд кайф, сплющь объём вши, грызя цент.";
+		String expected = "E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.";
 
-		assertEquals("E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -150,12 +154,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost7792000BContractNextStatic()
 	{
-		String result = Transliterator.translate(
-			"Эх, чужд кайф, сплющь объём вши, грызя цент.",
-			Standard.RUSSIAN_GOST_7_79_2000B
-		);
+		String value = "Эх, чужд кайф, сплющь объём вши, грызя цент.";
+		String expected = "E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.";
 
-		assertEquals("E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000B);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -165,12 +169,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost1687671A()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71A);
-		String result = transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
 
-		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71A);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -180,12 +185,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost1687671AStatic()
 	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_GOST_16876_71A
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
 
-		assertEquals("Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_GOST_16876_71A);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -195,12 +200,13 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost1687671B()
 	{
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
-		String result = transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф."
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.";
 
-		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
+		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -210,12 +216,12 @@ public class TransliteratorTest
 	@Test
 	public void translateRussianGost1687671BStatic()
 	{
-		String result = Transliterator.translate(
-			"Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.",
-			Standard.RUSSIAN_GOST_16876_71B
-		);
+		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+		String expected = "Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.";
 
-		assertEquals("Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.", result);
+		String actual = Transliterator.translate(value, Standard.RUSSIAN_GOST_16876_71B);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -225,12 +231,13 @@ public class TransliteratorTest
 	@Test
 	public void translateBelarusianGost7792000B()
 	{
-		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate(
-			"У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай."
-		);
+		String value = "У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай.";
+		String expected = "U Iu`i xudy` zhvavy` chort u zyalyonaj kamize`l`cy` pabeh pad’esczi farshu z yushkaj.";
 
-		assertEquals("U Iu`i xudy` zhvavy` chort u zyalyonaj kamize`l`cy` pabeh pad’esczi farshu z yushkaj.", result);
+		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -240,12 +247,12 @@ public class TransliteratorTest
 	@Test
 	public void translateBelarusianGost7792000BStatic()
 	{
-		String result = Transliterator.translate(
-			"У рудога вераб’я ў сховішчы пад фатэлем ляжаць нейкія гаючыя зёлкі.",
-			Standard.BELARUSIAN_GOST_7_79_2000B
-		);
+		String value = "У рудога вераб’я ў сховішчы пад фатэлем ляжаць нейкія гаючыя зёлкі.";
+		String expected = "U rudoha verab’ya u` sxovishchy` pad fate`lem lyazhacz` nejkiya hayuchy`ya zyolki.";
 
-		assertEquals("U rudoha verab’ya u` sxovishchy` pad fate`lem lyazhacz` nejkiya hayuchy`ya zyolki.", result);
+		String actual = Transliterator.translate(value, Standard.BELARUSIAN_GOST_7_79_2000B);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -256,12 +263,14 @@ public class TransliteratorTest
 	@Test
 	public void translateBelarusianGost7792000BContractNext()
 	{
-		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
-		String result = transliterator.translate(
-			"Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты."
-		);
+		String value = "Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.";
+		String expected =
+				"Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.";
 
-		assertEquals("Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.", result);
+		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+		String actual = transliterator.translate(value);
+
+		assertEquals(expected, actual);
 	}
 
 	/**
@@ -272,11 +281,12 @@ public class TransliteratorTest
 	@Test
 	public void translateBelarusianGost7792000BContractNextStatic()
 	{
-		String result = Transliterator.translate(
-			"Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.",
-			Standard.BELARUSIAN_GOST_7_79_2000B
-		);
+		String value = "Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.";
+		String expected =
+				"Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.";
 
-		assertEquals("Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.", result);
+		String actual = Transliterator.translate(value, Standard.BELARUSIAN_GOST_7_79_2000B);
+
+		assertEquals(expected, actual);
 	}
 }

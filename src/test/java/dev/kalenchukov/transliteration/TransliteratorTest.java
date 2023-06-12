@@ -27,7 +27,7 @@ package dev.kalenchukov.transliteration;
 import dev.kalenchukov.transliteration.resources.Standard;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Класс проверки методов класса {@link Transliterator}.
@@ -49,7 +49,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_ICAO_DOC_9303);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -64,7 +64,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000A);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -95,7 +95,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000A);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -111,7 +111,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -126,7 +126,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000B);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -143,7 +143,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -159,7 +159,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_GOST_7_79_2000B);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -175,7 +175,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71A);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -190,7 +190,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_GOST_16876_71A);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -206,7 +206,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_16876_71B);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -221,7 +221,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.RUSSIAN_GOST_16876_71B);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -237,7 +237,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -252,7 +252,7 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.BELARUSIAN_GOST_7_79_2000B);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -270,7 +270,7 @@ public class TransliteratorTest
 		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
 		String actualString = transliterator.translate(value);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 
 	/**
@@ -287,6 +287,6 @@ public class TransliteratorTest
 
 		String actualString = Transliterator.translate(value, Standard.BELARUSIAN_GOST_7_79_2000B);
 
-		assertEquals(expectedString, actualString);
+		assertThat(actualString).isEqualTo(expectedString);
 	}
 }

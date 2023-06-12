@@ -28,7 +28,7 @@ import dev.kalenchukov.transliteration.schemes.RussianGost7792000AScheme;
 import dev.kalenchukov.transliteration.schemes.Schematic;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * Класс проверки констант и методов перечисления {@link Standard}.
@@ -48,6 +48,6 @@ public class StandardTest
 
 		Schematic actualScheme = standard.getScheme();
 
-		assertEquals(expectedScheme, actualScheme);
+		assertThat(actualScheme).isEqualTo(expectedScheme);
 	}
 }

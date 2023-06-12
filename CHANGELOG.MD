@@ -1,7 +1,7 @@
 # Журнал изменений
 ## vX.X.X - XX.XX.XXXX
 ### Добавлено
-*
+* Добавлен модуль assertj-core версии 3.24.2.
 
 ### Изменено
 * Конструктор AbstractTransliterator.AbstractTransliterator(Standard) сделан protected.

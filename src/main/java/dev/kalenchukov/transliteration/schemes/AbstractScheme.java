@@ -25,9 +25,11 @@
 package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Класс схемы транслитерации по абстрактному стандарту.
@@ -63,5 +65,56 @@ public abstract class AbstractScheme implements Schematic
 	public Map<@NotNull String, @NotNull String> getRulesNext()
 	{
 		return Collections.emptyMap();
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * @return {@inheritDoc}
+	 */
+	@Override
+	public int hashCode()
+	{
+		int result = 0;
+
+		result = 31 * result + this.getRulesPrevious().hashCode();
+		result = 31 * result + this.getRules().hashCode();
+		result = 31 + result + this.getRulesNext().hashCode();
+
+		return result;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * @param obj {@inheritDoc}
+	 * @return {@inheritDoc}
+	 */
+	@Override
+	public boolean equals(@Nullable final Object obj)
+	{
+		if (this == obj) {
+			return true;
+		}
+
+		if (!(obj instanceof Schematic)) {
+			return false;
+		}
+
+		final Schematic schematic = (Schematic) obj;
+
+		if (!Objects.equals(this.getRulesPrevious(), schematic.getRulesPrevious())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRules(), schematic.getRules())) {
+			return false;
+		}
+
+		if (!Objects.equals(this.getRulesNext(), schematic.getRulesNext())) {
+			return false;
+		}
+
+		return true;
 	}
 }

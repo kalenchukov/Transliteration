@@ -25,10 +25,8 @@
 package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
-import java.util.Objects;
 
 /**
  * Класс схемы транслитерации русского языка по стандарту ГОСТ 7.79-2000 система А.
@@ -86,60 +84,5 @@ public final class RussianGost7792000AScheme extends AbstractScheme
 			Map.entry("ю", "û"),
 			Map.entry("я", "â")
 		);
-	}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @return {@inheritDoc}
-	 */
-	@Override
-	public int hashCode()
-	{
-		int rezult = 0;
-
-		rezult = 31 * rezult + this.getRulesPrevious().hashCode();
-		rezult = 31 * rezult + this.getRules().hashCode();
-		rezult = 31 * rezult + this.getRulesNext().hashCode();
-
-		return rezult;
-	}
-
-	/**
-	 * {@inheritDoc}
-	 *
-	 * @param obj {@inheritDoc}
-	 * @return {@inheritDoc}
-	 */
-	@Override
-	public boolean equals(@Nullable final Object obj)
-	{
-		if (obj == null) {
-			return false;
-		}
-
-		if (this == obj) {
-			return true;
-		}
-
-		if (this.getClass() != obj.getClass()) {
-			return false;
-		}
-
-		RussianGost7792000AScheme scheme = (RussianGost7792000AScheme) obj;
-
-		if (!Objects.equals(this.getRulesPrevious(), scheme.getRulesPrevious())) {
-			return false;
-		}
-
-		if (!Objects.equals(this.getRules(), scheme.getRules())) {
-			return false;
-		}
-
-		if (!Objects.equals(this.getRulesNext(), scheme.getRulesNext())) {
-			return false;
-		}
-
-		return true;
 	}
 }

@@ -43,10 +43,11 @@ public class StandardTest
 	@Test
 	public void getScheme()
 	{
-		Schematic expected = new RussianGost7792000AScheme();
+		Standard standard = Standard.RUSSIAN_GOST_7_79_2000A;
+		Schematic expectedScheme = new RussianGost7792000AScheme();
 
-		Schematic actual = Standard.RUSSIAN_GOST_7_79_2000A.getScheme();
+		Schematic actualScheme = standard.getScheme();
 
-		assertEquals(expected, actual);
+		assertEquals(expectedScheme, actualScheme);
 	}
 }

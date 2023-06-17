@@ -25,6 +25,7 @@
 package dev.kalenchukov.transliteration;
 
 import dev.kalenchukov.transliteration.resources.Standard;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -70,39 +71,6 @@ public class AbstractTransliteratorTest
 
 	/**
 	 * Проверка метода {@link AbstractTransliterator#translate(String)} по
-	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
-	 */
-	@Test
-	public void translateRussianGost7792000B()
-	{
-		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
-		String expectedString = "E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.";
-
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String actualString = transliterator.translate(value);
-
-		assertThat(actualString).isEqualTo(expectedString);
-	}
-
-	/**
-	 * Проверка метода {@link AbstractTransliterator#translate(String)} по
-	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
-	 * С особенностью, в зависимости от следующих букв.
-	 */
-	@Test
-	public void translateRussianGost7792000BContractNext()
-	{
-		String value = "Эх, чужд кайф, сплющь объём вши, грызя цент.";
-		String expectedString = "E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.";
-
-		Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
-		String actualString = transliterator.translate(value);
-
-		assertThat(actualString).isEqualTo(expectedString);
-	}
-
-	/**
-	 * Проверка метода {@link AbstractTransliterator#translate(String)} по
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
@@ -135,35 +103,89 @@ public class AbstractTransliteratorTest
 
 	/**
 	 * Проверка метода {@link AbstractTransliterator#translate(String)} по
-	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+	 *
+	 * @author Алексей Каленчуков
 	 */
-	@Test
-	public void translateBelarusianGost7792000B()
+	@Nested
+	public class TranslateRussianGost7792000B
 	{
-		String value = "У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай.";
-		String expectedString = "U Iu`i xudy` zhvavy` chort u zyalyonaj kamize`l`cy` pabeh pad’esczi farshu z yushkaj.";
+		/**
+		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
+		 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+		 */
+		@Test
+		public void translateRussianGost7792000B()
+		{
+			String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+			String expectedString = "E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.";
 
-		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
-		String actualString = transliterator.translate(value);
+			Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
+			String actualString = transliterator.translate(value);
 
-		assertThat(actualString).isEqualTo(expectedString);
+			assertThat(actualString).isEqualTo(expectedString);
+		}
+
+		/**
+		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
+		 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
+		 * С особенностью, в зависимости от следующих букв.
+		 */
+		@Test
+		public void translateRussianGost7792000BContractNext()
+		{
+			String value = "Эх, чужд кайф, сплющь объём вши, грызя цент.";
+			String expectedString = "E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.";
+
+			Transliterating transliterator = new Transliterator(Standard.RUSSIAN_GOST_7_79_2000B);
+			String actualString = transliterator.translate(value);
+
+			assertThat(actualString).isEqualTo(expectedString);
+		}
 	}
 
 	/**
-	 * Проверка метода {@link AbstractTransliterator#translate(String)} по
+	 * Класс проверки метода {@link AbstractTransliterator#translate(String)} по
 	 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
-	 * С особенностью, в зависимости от следующих букв.
+	 *
+	 * @author Алексей Каленчуков
 	 */
-	@Test
-	public void translateBelarusianGost7792000BContractNext()
+	@Nested
+	public class TranslateBelarusianGost7792000B
 	{
-		String value = "Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.";
-		String expectedString =
+		/**
+		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
+		 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+		 */
+		@Test
+		public void translateBelarusianGost7792000B()
+		{
+			String value = "У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай.";
+			String expectedString =
+				"U Iu`i xudy` zhvavy` chort u zyalyonaj kamize`l`cy` pabeh pad’esczi farshu z yushkaj.";
+
+			Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+			String actualString = transliterator.translate(value);
+
+			assertThat(actualString).isEqualTo(expectedString);
+		}
+
+		/**
+		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
+		 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
+		 * С особенностью, в зависимости от следующих букв.
+		 */
+		@Test
+		public void translateBelarusianGost7792000BContractNext()
+		{
+			String value = "Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.";
+			String expectedString =
 				"Ya zhorstka zab’yu prosta u` se`rcza he`ty` raskvechany` profil`, shto xodzicz` lya mayoj xaty`.";
 
-		Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
-		String actualString = transliterator.translate(value);
+			Transliterating transliterator = new Transliterator(Standard.BELARUSIAN_GOST_7_79_2000B);
+			String actualString = transliterator.translate(value);
 
-		assertThat(actualString).isEqualTo(expectedString);
+			assertThat(actualString).isEqualTo(expectedString);
+		}
 	}
 }

@@ -49,4 +49,17 @@ public class TransliteratorTest
 
 		assertThat(actualString).isEqualTo(expectedString);
 	}
+
+	/**
+	 * Проверка метода {@link Transliterator#translate(String, Standard)} с пустым значением.
+	 */
+	@Test
+	public void translateEmpty()
+	{
+		String value = "";
+
+		String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
+
+		assertThat(actualString).isEmpty();
+	}
 }

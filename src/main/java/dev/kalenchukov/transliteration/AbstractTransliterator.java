@@ -85,18 +85,12 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return символы для замены или текущий символ если замена не требуется.
 	 */
 	@NotNull
-	private String replacementSymbol(@NotNull final String text,
-									 @NotNull final Integer position)
+	private String replacementSymbol(@NotNull final String text, final int position)
 	{
 		Objects.requireNonNull(text);
-		Objects.requireNonNull(position);
 		Objects.checkIndex(position, text.length());
 
-		String newSymbol = null;
-
-		if (newSymbol == null) {
-			newSymbol = this.checkRulesPrevious(text, position);
-		}
+		String newSymbol = this.checkRulesPrevious(text, position);
 
 		if (newSymbol == null) {
 			newSymbol = this.checkRulesNext(text, position);
@@ -121,11 +115,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRulesPrevious(@NotNull final String text,
-									  @NotNull final Integer position)
+	private String checkRulesPrevious(@NotNull final String text, final int position)
 	{
 		Objects.requireNonNull(text);
-		Objects.requireNonNull(position);
 		Objects.checkIndex(position, text.length());
 
 		for (Map.Entry<String, String> entry : standard.getScheme().getRulesPrevious().entrySet())
@@ -152,11 +144,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRules(@NotNull final String text,
-							  @NotNull final Integer position)
+	private String checkRules(@NotNull final String text, final int position)
 	{
 		Objects.requireNonNull(text);
-		Objects.requireNonNull(position);
 		Objects.checkIndex(position, text.length());
 
 		String currentSymbol = String.valueOf(text.charAt(position)).toLowerCase();
@@ -172,11 +162,9 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
 	 */
 	@Nullable
-	private String checkRulesNext(@NotNull final String text,
-								  @NotNull final Integer position)
+	private String checkRulesNext(@NotNull final String text, final int position)
 	{
 		Objects.requireNonNull(text);
-		Objects.requireNonNull(position);
 		Objects.checkIndex(position, text.length());
 
 		for (Map.Entry<String, String> entry : standard.getScheme().getRulesNext().entrySet())

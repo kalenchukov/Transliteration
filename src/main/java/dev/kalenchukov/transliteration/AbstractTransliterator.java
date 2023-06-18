@@ -28,7 +28,6 @@ import dev.kalenchukov.stringi.Stringi;
 import dev.kalenchukov.transliteration.resources.Standard;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import org.jetbrains.annotations.Range;
 
 import java.util.Map;
 import java.util.Objects;
@@ -87,10 +86,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 */
 	@NotNull
 	private String replacementSymbol(@NotNull final String text,
-									 @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
+									 @NotNull final Integer position)
 	{
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
+		Objects.checkIndex(position, text.length());
 
 		String newSymbol = null;
 
@@ -122,10 +122,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 */
 	@Nullable
 	private String checkRulesPrevious(@NotNull final String text,
-									  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
+									  @NotNull final Integer position)
 	{
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
+		Objects.checkIndex(position, text.length());
 
 		for (Map.Entry<String, String> entry : standard.getScheme().getRulesPrevious().entrySet())
 		{
@@ -152,10 +153,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 */
 	@Nullable
 	private String checkRules(@NotNull final String text,
-							  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
+							  @NotNull final Integer position)
 	{
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
+		Objects.checkIndex(position, text.length());
 
 		String currentSymbol = String.valueOf(text.charAt(position)).toLowerCase();
 
@@ -171,10 +173,11 @@ public abstract class AbstractTransliterator implements Transliterating
 	 */
 	@Nullable
 	private String checkRulesNext(@NotNull final String text,
-								  @NotNull @Range(from = 0, to = Integer.MAX_VALUE) final Integer position)
+								  @NotNull final Integer position)
 	{
 		Objects.requireNonNull(text);
 		Objects.requireNonNull(position);
+		Objects.checkIndex(position, text.length());
 
 		for (Map.Entry<String, String> entry : standard.getScheme().getRulesNext().entrySet())
 		{

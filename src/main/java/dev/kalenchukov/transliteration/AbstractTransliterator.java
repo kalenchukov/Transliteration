@@ -82,7 +82,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 *
 	 * @param text текст.
 	 * @param position позиция символа в тексте.
-	 * @return символы для замены или текущий символ если замена не требуется.
+	 * @return символы для замены или {@code text} если замена не требуется.
 	 */
 	@NotNull
 	private String replacementSymbol(@NotNull final String text, final int position)

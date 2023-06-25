@@ -25,6 +25,7 @@
 package dev.kalenchukov.transliteration.schemes;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Unmodifiable;
 
 import java.util.Map;
 
@@ -45,6 +46,7 @@ public final class RussianGost7792000BScheme extends AbstractScheme
 	 *
 	 * @return {@inheritDoc}
 	 */
+	@Unmodifiable
 	@NotNull
 	@Override
 	public Map<@NotNull String, @NotNull String> getRules()
@@ -91,6 +93,7 @@ public final class RussianGost7792000BScheme extends AbstractScheme
 	 *
 	 * @return {@inheritDoc}
 	 */
+	@Unmodifiable
 	@NotNull
 	@Override
 	public Map<@NotNull String, @NotNull String> getRulesNext()

@@ -76,6 +76,7 @@ public enum Standard
 	 * Конструктор для {@code Standard}.
 	 *
 	 * @param scheme схема.
+	 * @throws NullPointerException если в качестве {@code scheme} передан {@code null}.
 	 */
 	Standard(@NotNull final Schematic scheme)
 	{

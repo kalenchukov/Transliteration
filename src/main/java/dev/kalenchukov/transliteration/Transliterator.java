@@ -40,6 +40,7 @@ public class Transliterator extends AbstractTransliterator
 	 * Конструктор для {@code Transliterator}.
 	 *
 	 * @param standard стандарт.
+	 * @throws NullPointerException если в качестве {@code standard} передан {@code null}.
 	 */
 	public Transliterator(@NotNull final Standard standard)
 	{
@@ -52,6 +53,8 @@ public class Transliterator extends AbstractTransliterator
 	 * @param text текст.
 	 * @param standard стандарт.
 	 * @return транслитерированный текст.
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
+	 * @throws NullPointerException если в качестве {@code standard} передан {@code null}.
 	 */
 	@NotNull
 	public static String translate(@NotNull final String text, @NotNull final Standard standard)

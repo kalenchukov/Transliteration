@@ -48,6 +48,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * Конструктор для {@code AbstractTransliteration}.
 	 *
 	 * @param standard стандарт.
+	 * @throws NullPointerException если в качестве {@code standard} передан {@code null}.
 	 */
 	protected AbstractTransliterator(@NotNull final Standard standard)
 	{
@@ -61,6 +62,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 *
 	 * @param text {@inheritDoc}
 	 * @return {@inheritDoc}
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
 	 */
 	@NotNull
 	@Override
@@ -83,6 +85,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @param text текст.
 	 * @param position позиция символа в тексте.
 	 * @return символы для замены или {@code text} если замена не требуется.
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
 	 */
 	@NotNull
 	private String replacementSymbol(@NotNull final String text, final int position)
@@ -113,6 +116,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @param text текст.
 	 * @param position позиция символа в тексте.
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
 	 */
 	@Nullable
 	private String checkRulesPrevious(@NotNull final String text, final int position)
@@ -142,6 +146,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @param text текст.
 	 * @param position позиция символа в тексте.
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
 	 */
 	@Nullable
 	private String checkRules(@NotNull final String text, final int position)
@@ -160,6 +165,7 @@ public abstract class AbstractTransliterator implements Transliterating
 	 * @param text текст.
 	 * @param position позиция символа в тексте.
 	 * @return значение для замены или {@code null}, если замена символа не требуется.
+	 * @throws NullPointerException если в качестве {@code text} передан {@code null}.
 	 */
 	@Nullable
 	private String checkRulesNext(@NotNull final String text, final int position)

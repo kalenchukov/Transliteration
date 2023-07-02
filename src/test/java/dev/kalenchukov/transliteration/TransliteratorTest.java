@@ -25,6 +25,7 @@
 package dev.kalenchukov.transliteration;
 
 import dev.kalenchukov.transliteration.resources.Standard;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -37,29 +38,38 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class TransliteratorTest
 {
 	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)}.
+	 * Класс проверки статических методов.
+	 *
+	 * @author Алексей Каленчуков
 	 */
-	@Test
-	public void translate()
+	@Nested
+	public class Static
 	{
-		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
-		String expectedString = "Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.";
+		/**
+		 * Проверка метода {@link Transliterator#translate(String, Standard)}.
+		 */
+		@Test
+		public void translate()
+		{
+			String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
+			String expectedString = "Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.";
 
-		String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
+			String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
 
-		assertThat(actualString).isEqualTo(expectedString);
-	}
+			assertThat(actualString).isEqualTo(expectedString);
+		}
 
-	/**
-	 * Проверка метода {@link Transliterator#translate(String, Standard)} с пустым значением.
-	 */
-	@Test
-	public void translateEmpty()
-	{
-		String value = "";
+		/**
+		 * Проверка метода {@link Transliterator#translate(String, Standard)} с пустым значением.
+		 */
+		@Test
+		public void translateEmpty()
+		{
+			String value = "";
 
-		String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
+			String actualString = Transliterator.translate(value, Standard.RUSSIAN_ICAO_DOC_9303);
 
-		assertThat(actualString).isEmpty();
+			assertThat(actualString).isEmpty();
+		}
 	}
 }

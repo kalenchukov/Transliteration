@@ -5,6 +5,7 @@
 
 ### Изменено
 * Конструктор AbstractTransliterator.AbstractTransliterator(Standard) сделан protected.
+* Изменена версия требуемого модуля annotations до 24.0.1.
 
 ### Исправлено
 *

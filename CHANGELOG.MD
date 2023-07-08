@@ -1,11 +1,10 @@
 # Журнал изменений
 ## vX.X.X - XX.XX.XXXX
 ### Добавлено
-* Добавлен модуль assertj-core версии 3.24.2.
+*
 
 ### Изменено
 * Конструктор AbstractTransliterator.AbstractTransliterator(Standard) сделан protected.
-* Изменена версия требуемого модуля annotations до 24.0.1.
 * Изменена версия Java на 17.
 
 ### Исправлено
@@ -34,13 +33,12 @@
 * Переименован класс IcaoDoc9303Schema -> RussianIcaoDoc9303Scheme.
 * Обновлён README.MD.
 * Изменена версия Java на 18.
-* Изменена версия требуемого модуля stringi до 1.5.0.
+*
 
 ## v1.2.0 - 12.02.2023
 ### Добавлено
 * Добавлен метод Schematic.equals(Object).
 * Добавлен метод Schematic.hashCode().
-* Изменена версия требуемого модуля stringi до 1.4.0.
 * Добавлен AUTHOR.MD.
 * Добавлен INSTALL.MD.
 * Добавлен CHANGELOG.MD.
@@ -57,7 +55,7 @@
 * Добавлен плагин maven-source в pom.xml.
 
 ### Изменено
-* Изменена версия требуемого модуля stringi до 1.3.0.
+*
 
 ### Исправлено
 * Исправлен баг в методе AbstractTransliterator.replacementSymbol(String, Integer).

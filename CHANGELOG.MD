@@ -1,17 +1,8 @@
 # Журнал изменений
-## vX.X.X - XX.XX.XXXX
-### Добавлено
-*
-
+## v1.4.0 - 08.07.2023
 ### Изменено
 * Конструктор AbstractTransliterator.AbstractTransliterator(Standard) сделан protected.
 * Изменена версия Java на 17.
-
-### Исправлено
-*
-
-### Удалено
-*
 
 ## v1.3.0 - 14.05.2023
 ### Добавлено
@@ -53,9 +44,6 @@
 * Добавлен плагин maven-dependency в pom.xml.
 * Добавлен плагин maven-javadoc в pom.xml.
 * Добавлен плагин maven-source в pom.xml.
-
-### Изменено
-*
 
 ### Исправлено
 * Исправлен баг в методе AbstractTransliterator.replacementSymbol(String, Integer).

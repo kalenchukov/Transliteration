@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package dev.kalenchukov.transliteration.resources;
+package dev.kalenchukov.transliteration.types;
 
 import dev.kalenchukov.transliteration.schemes.*;
 import org.jetbrains.annotations.NotNull;

@@ -25,4 +25,4 @@
 /**
  * Предоставляет перечисления, необходимые для определения типов.
  */
-package dev.kalenchukov.transliteration.resources;
+package dev.kalenchukov.transliteration.types;

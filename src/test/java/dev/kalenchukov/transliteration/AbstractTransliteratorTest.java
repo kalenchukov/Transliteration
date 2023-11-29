@@ -24,7 +24,7 @@
 
 package dev.kalenchukov.transliteration;
 
-import dev.kalenchukov.transliteration.resources.Standard;
+import dev.kalenchukov.transliteration.types.Standard;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 

@@ -25,7 +25,7 @@
 package dev.kalenchukov.transliteration;
 
 import dev.kalenchukov.stringi.Stringi;
-import dev.kalenchukov.transliteration.resources.Standard;
+import dev.kalenchukov.transliteration.types.Standard;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

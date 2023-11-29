@@ -7,6 +7,6 @@ module dev.kalenchukov.transliteration
 	requires dev.kalenchukov.stringi;
 
 	exports dev.kalenchukov.transliteration;
-	exports dev.kalenchukov.transliteration.resources;
+	exports dev.kalenchukov.transliteration.types;
 	exports dev.kalenchukov.transliteration.schemes;
 }

@@ -38,31 +38,31 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class AbstractSchemeTest
 {
-    /**
-     * Проверка метода {@link AbstractScheme#getRulesPrevious()}.
-     */
-    @Test
-    public void getRulesPrevious()
-    {
-        Schematic scheme = new BelarusianGost7792000BScheme();
+	/**
+	 * Проверка метода {@link AbstractScheme#getRulesPrevious()}.
+	 */
+	@Test
+	public void getRulesPrevious()
+	{
+		Schematic scheme = new BelarusianGost7792000BScheme();
 
-        Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
+		Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
 
-        assertThat(actualRulesPrevious).hasSize(0);
-    }
+		assertThat(actualRulesPrevious).hasSize(0);
+	}
 
-    /**
-     * Проверка метода {@link AbstractScheme#getRulesNext()}.
-     */
-    @Test
-    public void getRulesNext()
-    {
-        Schematic scheme = new BelarusianGost7792000BScheme();
+	/**
+	 * Проверка метода {@link AbstractScheme#getRulesNext()}.
+	 */
+	@Test
+	public void getRulesNext()
+	{
+		Schematic scheme = new BelarusianGost7792000BScheme();
 
-        Map<String, String> actualRulesNext = scheme.getRulesNext();
+		Map<String, String> actualRulesNext = scheme.getRulesNext();
 
-        assertThat(actualRulesNext).hasSize(4);
-    }
+		assertThat(actualRulesNext).hasSize(4);
+	}
 
 	/**
 	 * Класс проверки метода {@link AbstractScheme#equals(Object)}.
@@ -73,10 +73,10 @@ public class AbstractSchemeTest
 	public class Equals
 	{
 		/**
-		 * Проверка метода {@link AbstractScheme#equals(Object)}.
+		 * Проверка метода {@link AbstractScheme#equals(Object)} с равными объектами.
 		 */
 		@Test
-		public void testEquals()
+		public void equalsWithEqualsValue()
 		{
 			Schematic scheme1 = new RussianIcaoDoc9303Scheme();
 			Schematic scheme2 = new RussianIcaoDoc9303Scheme();
@@ -87,10 +87,10 @@ public class AbstractSchemeTest
 		}
 
 		/**
-		 * Проверка метода {@link AbstractScheme#equals(Object)} с {@code null}.
+		 * Проверка метода {@link AbstractScheme#equals(Object)} с значением в виде {@code null}.
 		 */
 		@Test
-		public void testEqualsNull()
+		public void equalsWithNull()
 		{
 			Schematic scheme1 = new RussianIcaoDoc9303Scheme();
 			Schematic scheme2 = null;
@@ -104,7 +104,7 @@ public class AbstractSchemeTest
 		 * Проверка метода {@link AbstractScheme#equals(Object)} с разными классами.
 		 */
 		@Test
-		public void testEqualsDifferentClass()
+		public void equalsWithDifferentTypeClass()
 		{
 			Schematic scheme1 = new RussianIcaoDoc9303Scheme();
 			Schematic scheme2 = new BelarusianGost7792000BScheme();
@@ -124,10 +124,10 @@ public class AbstractSchemeTest
 	public class HashCode
 	{
 		/**
-		 * Проверка метода {@link AbstractScheme#hashCode()}.
+		 * Проверка метода {@link AbstractScheme#hashCode()} с равными объектами.
 		 */
 		@Test
-		public void testHashCode()
+		public void hashCodeWithEqualsValue()
 		{
 			Schematic scheme1 = new RussianIcaoDoc9303Scheme();
 			Schematic scheme2 = new RussianIcaoDoc9303Scheme();
@@ -139,10 +139,10 @@ public class AbstractSchemeTest
 		}
 
 		/**
-		 * Проверка метода {@link AbstractScheme#hashCode()}.
+		 * Проверка метода {@link AbstractScheme#hashCode()} с равными объектами.
 		 */
 		@Test
-		public void testHashCodeDifferentClass()
+		public void hashCodeWithDifferentTypeClass()
 		{
 			Schematic scheme1 = new RussianIcaoDoc9303Scheme();
 			Schematic scheme2 = new BelarusianGost7792000BScheme();

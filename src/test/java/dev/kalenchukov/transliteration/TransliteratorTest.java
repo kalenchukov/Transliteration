@@ -63,7 +63,7 @@ public class TransliteratorTest
 		 * Проверка метода {@link Transliterator#translate(String, Standard)} с пустым значением.
 		 */
 		@Test
-		public void translateEmpty()
+		public void translateWithEmptyValue()
 		{
 			String value = "";
 

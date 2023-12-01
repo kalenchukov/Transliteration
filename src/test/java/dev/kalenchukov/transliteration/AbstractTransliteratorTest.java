@@ -42,7 +42,7 @@ public class AbstractTransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_ICAO_DOC_9303}.
 	 */
 	@Test
-	public void translateRussianIcaoDoc9303()
+	public void translateWithRussianIcaoDoc9303()
 	{
 		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
 		String expectedString = "Ei, zhlob! Gde tuz? Priach iunykh sieemshchits v shkaf.";
@@ -58,7 +58,7 @@ public class AbstractTransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000A}.
 	 */
 	@Test
-	public void translateRussianGost7792000A()
+	public void translateWithRussianGost7792000A()
 	{
 		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
 		String expectedString = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
@@ -74,7 +74,7 @@ public class AbstractTransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71A}.
 	 */
 	@Test
-	public void translateRussianGost1687671A()
+	public void translateWithRussianGost1687671A()
 	{
 		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
 		String expectedString = "Èj, žlob! Gde tuz? Prâčʹ ûnyh sʺёmŝic v škaf.";
@@ -90,7 +90,7 @@ public class AbstractTransliteratorTest
 	 * стандарту {@link Standard#RUSSIAN_GOST_16876_71B}.
 	 */
 	@Test
-	public void translateRussianGost1687671B()
+	public void translateWithRussianGost1687671B()
 	{
 		String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
 		String expectedString = "Ehjj, zhlob! Gde tuz? Prjach' junykh s\"jomshhic v shkaf.";
@@ -108,14 +108,14 @@ public class AbstractTransliteratorTest
 	 * @author Алексей Каленчуков
 	 */
 	@Nested
-	public class TranslateRussianGost7792000B
+	public class TranslateWithRussianGost7792000B
 	{
 		/**
 		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
 		 * стандарту {@link Standard#RUSSIAN_GOST_7_79_2000B}.
 		 */
 		@Test
-		public void translateRussianGost7792000B()
+		public void translateWithRussianGost7792000B()
 		{
 			String value = "Эй, жлоб! Где туз? Прячь юных съёмщиц в шкаф.";
 			String expectedString = "E`j, zhlob! Gde tuz? Pryach` yuny`x s``yomshhicz v shkaf.";
@@ -132,7 +132,7 @@ public class AbstractTransliteratorTest
 		 * С особенностью, в зависимости от следующих букв.
 		 */
 		@Test
-		public void translateRussianGost7792000BContractNext()
+		public void translateWithRussianGost7792000BContractNext()
 		{
 			String value = "Эх, чужд кайф, сплющь объём вши, грызя цент.";
 			String expectedString = "E`x, chuzhd kajf, splyushh` ob``yom vshi, gry`zya cent.";
@@ -151,14 +151,14 @@ public class AbstractTransliteratorTest
 	 * @author Алексей Каленчуков
 	 */
 	@Nested
-	public class TranslateBelarusianGost7792000B
+	public class TranslateWithBelarusianGost7792000B
 	{
 		/**
 		 * Проверка метода {@link AbstractTransliterator#translate(String)} по
 		 * стандарту {@link Standard#BELARUSIAN_GOST_7_79_2000B}.
 		 */
 		@Test
-		public void translateBelarusianGost7792000B()
+		public void translateWithBelarusianGost7792000B()
 		{
 			String value = "У Іўі худы жвавы чорт у зялёнай камізэльцы пабег пад’есці фаршу з юшкай.";
 			String expectedString =
@@ -176,7 +176,7 @@ public class AbstractTransliteratorTest
 		 * С особенностью, в зависимости от следующих букв.
 		 */
 		@Test
-		public void translateBelarusianGost7792000BContractNext()
+		public void translateWithBelarusianGost7792000BContractNext()
 		{
 			String value = "Я жорстка заб’ю проста ў сэрца гэты расквечаны профіль, што ходзіць ля маёй хаты.";
 			String expectedString =

@@ -37,42 +37,42 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class RussianIcaoDoc9303SchemeTest
 {
-    /**
-     * Проверка метода {@link RussianIcaoDoc9303Scheme#getRulesPrevious()}.
-     */
-    @Test
-    public void getRulesPrevious()
-    {
-        Schematic scheme = new RussianIcaoDoc9303Scheme();
+	/**
+	 * Проверка метода {@link RussianIcaoDoc9303Scheme#getRulesPrevious()}.
+	 */
+	@Test
+	public void getRulesPrevious()
+	{
+		Schematic scheme = new RussianIcaoDoc9303Scheme();
 
-        Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
+		Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
 
-        assertThat(actualRulesPrevious).isEmpty();
-    }
+		assertThat(actualRulesPrevious).isEmpty();
+	}
 
-    /**
-     * Проверка метода {@link RussianIcaoDoc9303Scheme#getRules()}.
-     */
-    @Test
-    public void getRules()
-    {
-        Schematic scheme = new RussianIcaoDoc9303Scheme();
+	/**
+	 * Проверка метода {@link RussianIcaoDoc9303Scheme#getRules()}.
+	 */
+	@Test
+	public void getRules()
+	{
+		Schematic scheme = new RussianIcaoDoc9303Scheme();
 
-        Map<String, String> actualRules = scheme.getRules();
+		Map<String, String> actualRules = scheme.getRules();
 
-        assertThat(actualRules).isNotEmpty();
-    }
+		assertThat(actualRules).isNotEmpty();
+	}
 
-    /**
-     * Проверка метода {@link RussianIcaoDoc9303Scheme#getRulesNext()}.
-     */
-    @Test
-    public void getRulesNext()
-    {
-        Schematic scheme = new RussianIcaoDoc9303Scheme();
+	/**
+	 * Проверка метода {@link RussianIcaoDoc9303Scheme#getRulesNext()}.
+	 */
+	@Test
+	public void getRulesNext()
+	{
+		Schematic scheme = new RussianIcaoDoc9303Scheme();
 
-        Map<String, String> actualRulesNext = scheme.getRulesNext();
+		Map<String, String> actualRulesNext = scheme.getRulesNext();
 
-        assertThat(actualRulesNext).isEmpty();
-    }
+		assertThat(actualRulesNext).isEmpty();
+	}
 }

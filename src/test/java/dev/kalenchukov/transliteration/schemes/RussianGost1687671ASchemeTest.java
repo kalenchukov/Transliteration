@@ -37,42 +37,42 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class RussianGost1687671ASchemeTest
 {
-    /**
-     * Проверка метода {@link RussianGost1687671AScheme#getRulesPrevious()}.
-     */
-    @Test
-    public void getRulesPrevious()
-    {
-        Schematic scheme = new RussianGost1687671AScheme();
+	/**
+	 * Проверка метода {@link RussianGost1687671AScheme#getRulesPrevious()}.
+	 */
+	@Test
+	public void getRulesPrevious()
+	{
+		Schematic scheme = new RussianGost1687671AScheme();
 
-        Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
+		Map<String, String> actualRulesPrevious = scheme.getRulesPrevious();
 
-        assertThat(actualRulesPrevious).isEmpty();
-    }
+		assertThat(actualRulesPrevious).isEmpty();
+	}
 
-    /**
-     * Проверка метода {@link RussianGost1687671AScheme#getRules()}.
-     */
-    @Test
-    public void getRules()
-    {
-        Schematic scheme = new RussianGost1687671AScheme();
+	/**
+	 * Проверка метода {@link RussianGost1687671AScheme#getRules()}.
+	 */
+	@Test
+	public void getRules()
+	{
+		Schematic scheme = new RussianGost1687671AScheme();
 
-        Map<String, String> actualRules = scheme.getRules();
+		Map<String, String> actualRules = scheme.getRules();
 
-        assertThat(actualRules).isNotEmpty();
-    }
+		assertThat(actualRules).isNotEmpty();
+	}
 
-    /**
-     * Проверка метода {@link RussianGost1687671AScheme#getRulesNext()}.
-     */
-    @Test
-    public void getRulesNext()
-    {
-        Schematic scheme = new RussianGost1687671AScheme();
+	/**
+	 * Проверка метода {@link RussianGost1687671AScheme#getRulesNext()}.
+	 */
+	@Test
+	public void getRulesNext()
+	{
+		Schematic scheme = new RussianGost1687671AScheme();
 
-        Map<String, String> actualRulesNext = scheme.getRulesNext();
+		Map<String, String> actualRulesNext = scheme.getRulesNext();
 
-        assertThat(actualRulesNext).isEmpty();
-    }
+		assertThat(actualRulesNext).isEmpty();
+	}
 }
